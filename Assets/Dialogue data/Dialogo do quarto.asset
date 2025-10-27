@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: Dialogo do quarto
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   falas:
-  - Nossa que sono gostoso...
-  - "Ser\xE1 que meus netinhos vem hoje?"
+  - nomePersonagem: vo maria
+    texto: eu adoro pau
+  - nomePersonagem: neto
+    texto: eu tambem vovo

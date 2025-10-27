@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
+
 public class DialogoSistema : MonoBehaviour
 {
 
@@ -10,21 +11,22 @@ public class DialogoSistema : MonoBehaviour
     public DialogueData dialogueData;     // arraste seu DialogueData pra ca
     public TMP_Text dialogueText;         //  o TextMeshPro da UI
     public float typingSpeed = 0.001f;     // velocidade da digitação aqiu
+    public TMP_Text nomeText;              // Cv pro nome do personagem 
 
     int currentLine = 0;
     bool isTyping = false;
     bool canAdvance = true;
 
+    
     void Start()
     {
         if (dialogueData == null || dialogueData.falas.Count == 0)
         {
-            Debug.LogError("DialogueData não configurado ou vazio");
-            return;
+         Debug.LogError("DialogueData não configurado ou vazio");
+        return;
         }
 
-        dialogueText.text = "";
-        StartCoroutine(TypeLine(dialogueData.falas[currentLine]));
+        MostrarFalaAtual();
     }
 
     void Update()
@@ -36,37 +38,34 @@ public class DialogoSistema : MonoBehaviour
             {
                 TrocarCena();
             }
-            return; // Sai do Update para não processar o restante.
+            return; // Sai do Update prea não fazer o restante.
         }
 
 
-        // avanço do texto com Enter
         if (Input.GetKeyDown(KeyCode.Return))
         {
             if (isTyping)
             {
-                // Pula digitaçã mostra texto completo
                 StopAllCoroutines();
-                dialogueText.text = dialogueData.falas[currentLine];
+                dialogueText.text = dialogueData.falas[currentLine].texto;
                 isTyping = false;
             }
             else
             {
-                // Tenta ir para a próxima fala
                 currentLine++;
                 if (currentLine < dialogueData.falas.Count)
                 {
-                    // Inicia a próxima linha
-                    StartCoroutine(TypeLine(dialogueData.falas[currentLine]));
+                    MostrarFalaAtual();
                 }
                 else
                 {
-
                     dialogueText.text = "";
-                    canAdvance = false; // AQUI é onde a troca de cena é habilitada.
+                    nomeText.text = "";
+                    canAdvance = false;
                 }
             }
         }
+    
     }
 
     IEnumerator TypeLine(string line)
@@ -90,4 +89,23 @@ public class DialogoSistema : MonoBehaviour
     {
         SceneManager.LoadScene(nextSceneName);
     }
+
+    void MostrarFalaAtual()
+    {
+       
+        if (currentLine < 0 || currentLine >= dialogueData.falas.Count)
+            return;
+
+        // Pega a fala atual
+        var falaAtual = dialogueData.falas[currentLine];
+
+        // atualiza o nome e limpa o texto
+        nomeText.text = falaAtual.nomePersonagem;
+        dialogueText.text = "";
+
+        // vomeca a digitação da fala
+        StartCoroutine(TypeLine(falaAtual.texto));
+    }
+
+
 }
