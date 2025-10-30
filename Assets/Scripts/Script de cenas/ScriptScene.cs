@@ -15,9 +15,15 @@ public class ScriptScene : MonoBehaviour
         
     }
 
-    public void trocaDeCenaStrat()
+    public void trocaDeCenaStart()
     {
-        SceneManager.LoadScene("RoomScene");
+        SceneManager.LoadScene("Start");
+        
+    }
+
+    public void trocaDeCenaGame()
+    {
+        SceneManager.LoadScene("Game");
     }
 
     public void trocaDeCenaCredits()
