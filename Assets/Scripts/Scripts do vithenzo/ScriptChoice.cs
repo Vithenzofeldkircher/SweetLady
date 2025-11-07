@@ -10,6 +10,7 @@ public class ScriptChoice : MonoBehaviour
     public TMP_Text nomeText;
     public float typingSpeed = 0.001f;
 
+
     [Header("UI")]
     public GameObject botaoPerguntar;
     public GameObject botaoEnvenenar;
@@ -31,12 +32,15 @@ public class ScriptChoice : MonoBehaviour
 
     public void Perguntar()
     {
-        if (perguntasFeitas >= maxPerguntas)
-            return;
+        if (isTyping) return; // Evita clicar enquanto escreve
+        if (perguntasFeitas >= maxPerguntas) return;
 
+        // Escolhe o DialogueData correto
         dialogueData = dialogues[perguntasFeitas];
         perguntasFeitas++;
         currentLine = 0;
+
+        StopAllCoroutines(); // Garante que não há outro texto sendo digitado
         MostrarFalaAtual();
 
         if (perguntasFeitas >= maxPerguntas)
@@ -64,15 +68,19 @@ public class ScriptChoice : MonoBehaviour
             }
             else
             {
-                if (currentLine < dialogueData.falas.Count - 1)
+                // Passa para a próxima fala
+                currentLine++;
+                if (currentLine < dialogueData.falas.Count)
                 {
-                    currentLine++;
+                    StopAllCoroutines();
                     MostrarFalaAtual();
                 }
                 else
                 {
+                    // Terminou todas as falas
                     dialogueText.text = "";
                     nomeText.text = "";
+                    dialogueData = null; // Limpa pra evitar bug no próximo diálogo
                 }
             }
         }

@@ -52,17 +52,17 @@ public class DialogoSistema : MonoBehaviour
             }
             else
             {
-                currentLine++;
+               currentLine++;
                 if (currentLine < dialogueData.falas.Count)
-                {
+               {
                     MostrarFalaAtual();
                 }
-                else
+               else
                 {
                     dialogueText.text = "";
-                    nomeText.text = "";
-                    canAdvance = false;
-                }
+                   nomeText.text = "";
+                   canAdvance = false;
+               }
             }
         }
     
@@ -90,18 +90,18 @@ public class DialogoSistema : MonoBehaviour
         SceneManager.LoadScene(nextSceneName);
     }
 
-    void MostrarFalaAtual()
-    {
+ void MostrarFalaAtual()
+  {
        
         if (currentLine < 0 || currentLine >= dialogueData.falas.Count)
-            return;
+           return;
 
         // Pega a fala atual
         var falaAtual = dialogueData.falas[currentLine];
 
         // atualiza o nome e limpa o texto
         nomeText.text = falaAtual.nomePersonagem;
-        dialogueText.text = "";
+       dialogueText.text = "";
 
         // vomeca a digitação da fala
         StartCoroutine(TypeLine(falaAtual.texto));
