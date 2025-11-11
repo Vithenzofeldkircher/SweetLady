@@ -211,8 +211,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogoSistema
   dialogueData: {fileID: 11400000, guid: d9939675317115142867c0e7d10a53f7, type: 2}
   dialogueText: {fileID: 221035432}
-  typingSpeed: 0.01
   nomeText: {fileID: 871763653}
+  typingSpeed: 0.01
   nextSceneName: RoomScene
 --- !u!1 &221035431
 GameObject:
@@ -680,55 +680,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1444921811
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1444921813}
-  - component: {fileID: 1444921812}
-  m_Layer: 0
-  m_Name: Dialogo data
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1444921812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1444921811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03070775f2d833d4d9ca52c979f6ff9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DialogoSistema
-  dialogueData: {fileID: 11400000, guid: d9939675317115142867c0e7d10a53f7, type: 2}
-  dialogueText: {fileID: 221035432}
-  typingSpeed: 0.1
-  nomeText: {fileID: 871763653}
-  nextSceneName: RoomScene
---- !u!4 &1444921813
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1444921811}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.07625, y: 10.17756, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1861472821
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,7 +745,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -905,5 +856,4 @@ SceneRoots:
   - {fileID: 931740978}
   - {fileID: 1367879354}
   - {fileID: 2056067216}
-  - {fileID: 1444921813}
   - {fileID: 1861472823}
