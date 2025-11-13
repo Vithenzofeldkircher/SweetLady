@@ -213,6 +213,7 @@ MonoBehaviour:
   dialogueText: {fileID: 221035432}
   nomeText: {fileID: 871763653}
   typingSpeed: 0.01
+  mudaCenaAoTerminar: 1
   nextSceneName: RoomScene
 --- !u!1 &221035431
 GameObject:

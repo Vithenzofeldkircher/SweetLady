@@ -1,10 +1,10 @@
-using TMPro;
+ï»¿using TMPro;
 using UnityEngine;
 using System.Collections;
 
 public class ScriptChoice : MonoBehaviour
 {
-    [Header("Referências")]
+    [Header("ReferÃªncias")]
     public DialogueData[] dialogues;
     public TMP_Text dialogueText;
     public TMP_Text nomeText;
@@ -14,8 +14,9 @@ public class ScriptChoice : MonoBehaviour
     public GameObject botaoPerguntar;
     public GameObject botaoEnvenenar;
     public GameObject botaoDeixarIr;
+    public GameObject painelDialogo; // painel do diÃ¡logo
 
-    [Header("Configuração")]
+    [Header("ConfiguraÃ§Ã£o")]
     public int maxPerguntas = 3;
 
     private int perguntasFeitas = 0;
@@ -31,22 +32,43 @@ public class ScriptChoice : MonoBehaviour
         botaoDeixarIr.SetActive(false);
         botaoPerguntar.SetActive(true);
 
+        painelDialogo.SetActive(true); // painel comeÃ§a visÃ­vel
         dialogueText.text = "";
         nomeText.text = "";
+
+        IniciarDialogoAutomatico();
+    }
+
+    void IniciarDialogoAutomatico()
+    {
+        if (dialogues.Length > 0)
+        {
+            dialogueDataAtual = dialogues[0];
+            perguntasFeitas = 1;
+            linhaAtual = 0;
+            terminouDialogo = false;
+
+            painelDialogo.SetActive(true); // garante que o painel aparevca
+            if (typingCoroutine != null)
+                StopCoroutine(typingCoroutine);
+
+            MostrarFalaAtual();
+        }
     }
 
     public void Perguntar()
     {
         if (isTyping || (dialogueDataAtual != null && !terminouDialogo))
-            return; // impede clicar enquanto o diálogo atual ainda não acabou
+            return; // impede clicar enquanto o diÃ¡logo atual ainda nÃ£o acabou
 
         if (perguntasFeitas >= maxPerguntas) return;
 
-        // Seleciona o diálogo correspondente
         dialogueDataAtual = dialogues[perguntasFeitas];
         perguntasFeitas++;
         linhaAtual = 0;
         terminouDialogo = false;
+
+        painelDialogo.SetActive(true); //mostra o painel ao iniciar novo diÃ¡logo
 
         if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
@@ -78,14 +100,14 @@ public class ScriptChoice : MonoBehaviour
 
         if (isTyping)
         {
-            // Termina a digitação imediatamente
+            // Termina a digitaÃ§Ã£o imediatamente
             if (typingCoroutine != null) StopCoroutine(typingCoroutine);
             dialogueText.text = dialogueDataAtual.falas[linhaAtual].texto;
             isTyping = false;
             return;
         }
 
-        // Vai pra próxima fala
+        // Vai pra proxima fala
         linhaAtual++;
 
         if (linhaAtual < dialogueDataAtual.falas.Count)
@@ -94,10 +116,12 @@ public class ScriptChoice : MonoBehaviour
         }
         else
         {
-            // Terminou o diálogo atual
+            // Terminou o dialogo atual
             terminouDialogo = true;
             dialogueText.text = "";
             nomeText.text = "";
+
+            painelDialogo.SetActive(false); //esconde o painel quando termina
         }
     }
 
@@ -130,5 +154,3 @@ public class ScriptChoice : MonoBehaviour
         isTyping = false;
     }
 }
-
-
