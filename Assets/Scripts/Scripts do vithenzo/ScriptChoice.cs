@@ -5,42 +5,52 @@ using System.Collections;
 public class ScriptChoice : MonoBehaviour
 {
     [Header("Referências")]
-    public DialogueData[] dialogues; // 3 DialogueData diferentes
+    public DialogueData[] dialogues;
     public TMP_Text dialogueText;
     public TMP_Text nomeText;
-    public float typingSpeed = 0.001f;
-
+    public float typingSpeed = 0.02f;
 
     [Header("UI")]
     public GameObject botaoPerguntar;
     public GameObject botaoEnvenenar;
     public GameObject botaoDeixarIr;
 
-    [Header("Limite de Perguntas")]
+    [Header("Configuração")]
     public int maxPerguntas = 3;
-    private int perguntasFeitas = 0;
 
-    private DialogueData dialogueData;
-    private int currentLine = 0;
+    private int perguntasFeitas = 0;
+    private DialogueData dialogueDataAtual;
+    private int linhaAtual = 0;
     private bool isTyping = false;
+    private bool terminouDialogo = false;
+    private Coroutine typingCoroutine;
 
     void Start()
     {
         botaoEnvenenar.SetActive(false);
         botaoDeixarIr.SetActive(false);
+        botaoPerguntar.SetActive(true);
+
+        dialogueText.text = "";
+        nomeText.text = "";
     }
 
     public void Perguntar()
     {
-        if (isTyping) return; // Evita clicar enquanto escreve
+        if (isTyping || (dialogueDataAtual != null && !terminouDialogo))
+            return; // impede clicar enquanto o diálogo atual ainda não acabou
+
         if (perguntasFeitas >= maxPerguntas) return;
 
-        // Escolhe o DialogueData correto
-        dialogueData = dialogues[perguntasFeitas];
+        // Seleciona o diálogo correspondente
+        dialogueDataAtual = dialogues[perguntasFeitas];
         perguntasFeitas++;
-        currentLine = 0;
+        linhaAtual = 0;
+        terminouDialogo = false;
 
-        StopAllCoroutines(); // Garante que não há outro texto sendo digitado
+        if (typingCoroutine != null)
+            StopCoroutine(typingCoroutine);
+
         MostrarFalaAtual();
 
         if (perguntasFeitas >= maxPerguntas)
@@ -56,34 +66,54 @@ public class ScriptChoice : MonoBehaviour
 
     void Update()
     {
-        if (dialogueData == null) return;
+        if (dialogueDataAtual == null || terminouDialogo) return;
 
         if (Input.GetKeyDown(KeyCode.Return))
+            AvancarFala();
+    }
+
+    public void AvancarFala()
+    {
+        if (dialogueDataAtual == null) return;
+
+        if (isTyping)
         {
-            if (isTyping)
-            {
-                StopAllCoroutines();
-                dialogueText.text = dialogueData.falas[currentLine].texto;
-                isTyping = false;
-            }
-            else
-            {
-                // Passa para a próxima fala
-                currentLine++;
-                if (currentLine < dialogueData.falas.Count)
-                {
-                    StopAllCoroutines();
-                    MostrarFalaAtual();
-                }
-                else
-                {
-                    // Terminou todas as falas
-                    dialogueText.text = "";
-                    nomeText.text = "";
-                    dialogueData = null; // Limpa pra evitar bug no próximo diálogo
-                }
-            }
+            // Termina a digitação imediatamente
+            if (typingCoroutine != null) StopCoroutine(typingCoroutine);
+            dialogueText.text = dialogueDataAtual.falas[linhaAtual].texto;
+            isTyping = false;
+            return;
         }
+
+        // Vai pra próxima fala
+        linhaAtual++;
+
+        if (linhaAtual < dialogueDataAtual.falas.Count)
+        {
+            MostrarFalaAtual();
+        }
+        else
+        {
+            // Terminou o diálogo atual
+            terminouDialogo = true;
+            dialogueText.text = "";
+            nomeText.text = "";
+        }
+    }
+
+    void MostrarFalaAtual()
+    {
+        if (dialogueDataAtual == null || linhaAtual >= dialogueDataAtual.falas.Count)
+            return;
+
+        var fala = dialogueDataAtual.falas[linhaAtual];
+        nomeText.text = fala.nomePersonagem;
+        dialogueText.text = "";
+
+        if (typingCoroutine != null)
+            StopCoroutine(typingCoroutine);
+
+        typingCoroutine = StartCoroutine(TypeLine(fala.texto));
     }
 
     IEnumerator TypeLine(string line)
@@ -99,18 +129,6 @@ public class ScriptChoice : MonoBehaviour
 
         isTyping = false;
     }
-
-    void MostrarFalaAtual()
-    {
-        if (dialogueData == null) return;
-        if (currentLine < 0 || currentLine >= dialogueData.falas.Count) return;
-
-        var falaAtual = dialogueData.falas[currentLine];
-        nomeText.text = falaAtual.nomePersonagem;
-        dialogueText.text = "";
-
-        StartCoroutine(TypeLine(falaAtual.texto));
-    }
-
 }
+
 

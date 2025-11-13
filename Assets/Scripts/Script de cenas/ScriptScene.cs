@@ -31,4 +31,8 @@ public class ScriptScene : MonoBehaviour
         SceneManager.LoadScene("Creditos");
     }
 
+    public void Saida()
+    {
+
+    }
 }

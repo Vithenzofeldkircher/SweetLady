@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a91982e328cd8a6428a5ab898a1314fd, type: 3}
   m_Name: sexo
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
-  falas: []
+  falas:
+  - nomePersonagem: henrioquie
+    texto: ola
+  - nomePersonagem: henrioquie
+    texto: tudo cverto
+  - nomePersonagem: henrioquie
+    texto: asdsadsa
