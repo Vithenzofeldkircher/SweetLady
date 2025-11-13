@@ -33,6 +33,6 @@ public class ScriptScene : MonoBehaviour
 
     public void Saida()
     {
-
+        Application.Quit();
     }
 }

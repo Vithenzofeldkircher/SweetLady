@@ -1078,7 +1078,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1173013427}
         m_TargetAssemblyTypeName: ScriptScene, Assembly-CSharp
-        m_MethodName: trocaDeCenaCredits
+        m_MethodName: Saida
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
