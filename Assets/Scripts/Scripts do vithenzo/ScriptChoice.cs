@@ -4,6 +4,12 @@ using System.Collections;
 
 public class ScriptChoice : MonoBehaviour
 {
+    [Header("falas finais")]
+    public int falaEnvenenarNormal;
+    public int falaEnvenenarImpostor;
+    public int falaDeixarIrNormal;
+    public int falaDeixarIrImpostor;
+
     [Header("Referências")]
     public DialogueData[] dialogues;
     public TMP_Text dialogueText;
@@ -25,9 +31,12 @@ public class ScriptChoice : MonoBehaviour
     private bool isTyping = false;
     private bool terminouDialogo = false;
     private Coroutine typingCoroutine;
+    private bool npcEhImpostor;
 
     void Start()
     {
+        npcEhImpostor = (Random.Range(0,20)==0);
+
         botaoEnvenenar.SetActive(false);
         botaoDeixarIr.SetActive(false);
         botaoPerguntar.SetActive(true);
@@ -72,6 +81,7 @@ public class ScriptChoice : MonoBehaviour
 
         if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
+        
 
         MostrarFalaAtual();
 
@@ -153,4 +163,41 @@ public class ScriptChoice : MonoBehaviour
 
         isTyping = false;
     }
+
+    public void EscolherEnvenenar()
+    {
+        painelDialogo.SetActive(true);
+        terminouDialogo = false;
+
+        if (npcEhImpostor)
+            IrParaFalaFinal(falaEnvenenarImpostor);
+        else
+            IrParaFalaFinal(falaEnvenenarNormal);
+    }
+
+    public void EscolherDeixarIr()
+    {
+        painelDialogo.SetActive(true);
+        terminouDialogo = false;
+
+        if (npcEhImpostor)
+            IrParaFalaFinal(falaDeixarIrImpostor);
+        else
+            IrParaFalaFinal(falaDeixarIrNormal);
+    }
+
+    void IrParaFalaFinal(int id)
+    {
+        dialogueDataAtual = dialogues[dialogues.Length - 1]; // normalmente último dialogueData
+        linhaAtual = id;
+
+        painelDialogo.SetActive(true);
+
+        if (typingCoroutine != null)
+            StopCoroutine(typingCoroutine);
+
+        MostrarFalaAtual();
+    }
+
+
 }

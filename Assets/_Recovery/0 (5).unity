@@ -709,12 +709,12 @@ GameObject:
   - component: {fileID: 837903769}
   - component: {fileID: 837903768}
   m_Layer: 5
-  m_Name: Buttonenvenenar
+  m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &837903767
 RectTransform:
   m_ObjectHideFlags: 0
@@ -732,8 +732,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -752.71, y: 168}
-  m_SizeDelta: {x: 200.55, y: 72}
+  m_AnchoredPosition: {x: -750, y: 158}
+  m_SizeDelta: {x: 270, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &837903768
 MonoBehaviour:
@@ -778,19 +778,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 837903769}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1185484999}
-        m_TargetAssemblyTypeName: ScriptScene, Assembly-CSharp
-        m_MethodName: trocaDeCenaGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &837903769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -912,13 +900,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1185484998}
-        m_TargetAssemblyTypeName: ScriptChoice, Assembly-CSharp
-        m_MethodName: Perguntar
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -975,7 +963,6 @@ GameObject:
   - component: {fileID: 1185484995}
   - component: {fileID: 1185484994}
   - component: {fileID: 1185484998}
-  - component: {fileID: 1185484999}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1081,10 +1068,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dd9eefcad3891d48ad45cd711cdf9de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScriptChoice
-  falaEnvenenarNormal: 0
-  falaEnvenenarImpostor: 0
-  falaDeixarIrNormal: 0
-  falaDeixarIrImpostor: 0
   dialogues:
   - {fileID: 11400000, guid: d9939675317115142867c0e7d10a53f7, type: 2}
   - {fileID: 11400000, guid: da91bb1118da31e418ee4ae0e9a445bb, type: 2}
@@ -1097,18 +1080,6 @@ MonoBehaviour:
   botaoDeixarIr: {fileID: 1426026771}
   painelDialogo: {fileID: 199567070}
   maxPerguntas: 3
---- !u!114 &1185484999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1185484993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d9dba87e3bd3f648ad7ba03eb13b09d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ScriptScene
 --- !u!1 &1391254794
 GameObject:
   m_ObjectHideFlags: 0
@@ -1193,8 +1164,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1281,8 +1252,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -752.7102, y: 283}
-  m_SizeDelta: {x: 200.56, y: 72}
+  m_AnchoredPosition: {x: -752, y: 287}
+  m_SizeDelta: {x: 203.3028, y: 72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1426026773
 MonoBehaviour:
@@ -1327,19 +1298,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1426026774}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1185484999}
-        m_TargetAssemblyTypeName: ScriptScene, Assembly-CSharp
-        m_MethodName: trocaDeCenaGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1426026774
 MonoBehaviour:
   m_ObjectHideFlags: 0
