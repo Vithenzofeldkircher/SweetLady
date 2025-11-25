@@ -170,9 +170,22 @@ public class ScriptChoice : MonoBehaviour
         terminouDialogo = false;
 
         if (npcEhImpostor)
-            IrParaFalaFinal(falaEnvenenarImpostor);
+        {
+            // impostor envenenado → nenhuma morte
+            EscreverResultadoFinal(
+                "Nenhuma morte ocorreu hoje. O impostor foi eliminado antes de atacar."
+            );
+        }
         else
-            IrParaFalaFinal(falaEnvenenarNormal);
+        {
+            // inocente envenenado → 1 morte
+            GameStats.mortesTotais++;
+            EscreverResultadoFinal(
+                $"{GameStats.mortesTotais} corpos foram encontrados essa noite."
+            );
+        }
+
+        StartCoroutine(VoltarParaCenaGame());
     }
 
     public void EscolherDeixarIr()
@@ -181,23 +194,42 @@ public class ScriptChoice : MonoBehaviour
         terminouDialogo = false;
 
         if (npcEhImpostor)
-            IrParaFalaFinal(falaDeixarIrImpostor);
+        {
+            // impostor livre → 1 morte ocorre
+            GameStats.mortesTotais++;
+            EscreverResultadoFinal(
+                "Um corpo foi encontrado essa noite."
+            );
+        }
         else
-            IrParaFalaFinal(falaDeixarIrNormal);
+        {
+            // inocente livre → ninguém morre
+            EscreverResultadoFinal(
+                $"Nenhuma morte ocorreu hoje."
+            );
+        }
+
+        StartCoroutine(VoltarParaCenaGame());
     }
 
-    void IrParaFalaFinal(int id)
-    {
-        dialogueDataAtual = dialogues[dialogues.Length - 1]; // normalmente último dialogueData
-        linhaAtual = id;
 
-        painelDialogo.SetActive(true);
+    void EscreverResultadoFinal(string msg)
+    {
+        dialogueText.text = "";
+        nomeText.text = "Relatório da Noite";
 
         if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
 
-        MostrarFalaAtual();
+        typingCoroutine = StartCoroutine(TypeLine(msg));
     }
+
+    IEnumerator VoltarParaCenaGame()
+    {
+        yield return new WaitForSeconds(2.5f);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
+    }
+
 
 
 }
