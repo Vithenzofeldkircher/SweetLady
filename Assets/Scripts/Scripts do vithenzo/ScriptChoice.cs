@@ -169,20 +169,23 @@ public class ScriptChoice : MonoBehaviour
         painelDialogo.SetActive(true);
         terminouDialogo = false;
 
+        // impostor envenenado → nenhuma morte ocorre
         if (npcEhImpostor)
         {
-            // impostor envenenado → nenhuma morte
-            EscreverResultadoFinal(
-                "Nenhuma morte ocorreu hoje. O impostor foi eliminado antes de atacar."
-            );
+            GameStats.relatorioUltimaNoite =
+                "Nenhuma morte ocorreu esta noite. O impostor foi neutralizado antes de atacar.";
+
+            EscreverResultadoFinal(GameStats.relatorioUltimaNoite);
         }
         else
         {
             // inocente envenenado → 1 morte
             GameStats.mortesTotais++;
-            EscreverResultadoFinal(
-                $"{GameStats.mortesTotais} corpos foram encontrados essa noite."
-            );
+
+            GameStats.relatorioUltimaNoite =
+                $"{GameStats.mortesTotais} humanos foram mortos esta noite.";
+
+            EscreverResultadoFinal(GameStats.relatorioUltimaNoite);
         }
 
         StartCoroutine(VoltarParaCenaGame());
@@ -193,20 +196,23 @@ public class ScriptChoice : MonoBehaviour
         painelDialogo.SetActive(true);
         terminouDialogo = false;
 
+        // impostor livre → 1 morte brutal
         if (npcEhImpostor)
         {
-            // impostor livre → 1 morte ocorre
             GameStats.mortesTotais++;
-            EscreverResultadoFinal(
-                "Um corpo foi encontrado essa noite."
-            );
+
+            GameStats.relatorioUltimaNoite =
+                $"{GameStats.mortesTotais} corpos foram encontrados mutilados naquela noite.";
+
+            EscreverResultadoFinal(GameStats.relatorioUltimaNoite);
         }
         else
         {
-            // inocente livre → ninguém morre
-            EscreverResultadoFinal(
-                $"Nenhuma morte ocorreu hoje."
-            );
+            // inocente livre → nenhuma morte
+            GameStats.relatorioUltimaNoite =
+                "Nada foi reportado esta noite.";
+
+            EscreverResultadoFinal(GameStats.relatorioUltimaNoite);
         }
 
         StartCoroutine(VoltarParaCenaGame());
@@ -229,7 +235,5 @@ public class ScriptChoice : MonoBehaviour
         yield return new WaitForSeconds(2.5f);
         UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
     }
-
-
 
 }

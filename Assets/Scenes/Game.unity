@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 20907832}
   - component: {fileID: 20907831}
   - component: {fileID: 20907833}
+  - component: {fileID: 20907834}
   m_Layer: 5
   m_Name: Panel  do dialogo
   m_TagString: Untagged
@@ -215,6 +216,21 @@ MonoBehaviour:
   typingSpeed: 0.01
   mudaCenaAoTerminar: 1
   nextSceneName: RoomScene
+--- !u!114 &20907834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20907829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49ef6e1d0aa6d1a40b21d1aa6ccedc1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RadioNoite
+  textoRadio: {fileID: 221035432}
+  nomeRadio: {fileID: 871763653}
+  delayEntreLetras: 0.03
 --- !u!1 &221035431
 GameObject:
   m_ObjectHideFlags: 0
