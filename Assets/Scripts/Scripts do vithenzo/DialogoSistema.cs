@@ -23,8 +23,8 @@ public class DialogoSistema : MonoBehaviour
     void Start()
     {
         // Se quiser iniciar automaticamente, mantenha:
-        if (dialogueData != null)
-            IniciarDialogo();
+        //if (dialogueData != null)
+            //IniciarDialogo();
     }
 
     void Update()

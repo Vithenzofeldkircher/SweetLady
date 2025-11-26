@@ -779,9 +779,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1185484999}
-        m_TargetAssemblyTypeName: ScriptScene, Assembly-CSharp
-        m_MethodName: trocaDeCenaGame
+      - m_Target: {fileID: 1185484998}
+        m_TargetAssemblyTypeName: ScriptChoice, Assembly-CSharp
+        m_MethodName: EscolherEnvenenar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -975,7 +975,6 @@ GameObject:
   - component: {fileID: 1185484995}
   - component: {fileID: 1185484994}
   - component: {fileID: 1185484998}
-  - component: {fileID: 1185484999}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1081,10 +1080,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dd9eefcad3891d48ad45cd711cdf9de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScriptChoice
-  falaEnvenenarNormal: 0
-  falaEnvenenarImpostor: 1
-  falaDeixarIrNormal: 2
-  falaDeixarIrImpostor: 0
   dialogues:
   - {fileID: 11400000, guid: d9939675317115142867c0e7d10a53f7, type: 2}
   - {fileID: 11400000, guid: da91bb1118da31e418ee4ae0e9a445bb, type: 2}
@@ -1097,18 +1092,6 @@ MonoBehaviour:
   botaoDeixarIr: {fileID: 1426026771}
   painelDialogo: {fileID: 199567070}
   maxPerguntas: 3
---- !u!114 &1185484999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1185484993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d9dba87e3bd3f648ad7ba03eb13b09d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ScriptScene
 --- !u!1 &1391254794
 GameObject:
   m_ObjectHideFlags: 0
@@ -1328,9 +1311,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1185484999}
-        m_TargetAssemblyTypeName: ScriptScene, Assembly-CSharp
-        m_MethodName: trocaDeCenaGame
+      - m_Target: {fileID: 1185484998}
+        m_TargetAssemblyTypeName: ScriptChoice, Assembly-CSharp
+        m_MethodName: EscolherDeixarIr
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

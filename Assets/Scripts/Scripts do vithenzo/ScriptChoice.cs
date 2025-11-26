@@ -1,15 +1,10 @@
 ﻿using TMPro;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class ScriptChoice : MonoBehaviour
 {
-    [Header("falas finais")]
-    public int falaEnvenenarNormal;
-    public int falaEnvenenarImpostor;
-    public int falaDeixarIrNormal;
-    public int falaDeixarIrImpostor;
-
     [Header("Referências")]
     public DialogueData[] dialogues;
     public TMP_Text dialogueText;
@@ -20,7 +15,7 @@ public class ScriptChoice : MonoBehaviour
     public GameObject botaoPerguntar;
     public GameObject botaoEnvenenar;
     public GameObject botaoDeixarIr;
-    public GameObject painelDialogo; // painel do diálogo
+    public GameObject painelDialogo;
 
     [Header("Configuração")]
     public int maxPerguntas = 3;
@@ -35,13 +30,18 @@ public class ScriptChoice : MonoBehaviour
 
     void Start()
     {
-        npcEhImpostor = (Random.Range(0,20)==0);
+        npcEhImpostor = (Random.Range(0, 20) == 0);
+
+        if (npcEhImpostor)
+            Debug.Log("⚠️ NPC GERADO COMO IMPOSTOR!");
+        else
+            Debug.Log("NPC inocente.");
 
         botaoEnvenenar.SetActive(false);
         botaoDeixarIr.SetActive(false);
         botaoPerguntar.SetActive(true);
 
-        painelDialogo.SetActive(true); // painel começa visível
+        painelDialogo.SetActive(true);
         dialogueText.text = "";
         nomeText.text = "";
 
@@ -50,38 +50,24 @@ public class ScriptChoice : MonoBehaviour
 
     void IniciarDialogoAutomatico()
     {
-        if (dialogues.Length > 0)
-        {
-            dialogueDataAtual = dialogues[0];
-            perguntasFeitas = 1;
-            linhaAtual = 0;
-            terminouDialogo = false;
+        dialogueDataAtual = dialogues[0];
+        perguntasFeitas = 1;
+        linhaAtual = 0;
+        terminouDialogo = false;
 
-            painelDialogo.SetActive(true); // garante que o painel aparevca
-            if (typingCoroutine != null)
-                StopCoroutine(typingCoroutine);
-
-            MostrarFalaAtual();
-        }
+        MostrarFalaAtual();
     }
 
     public void Perguntar()
     {
-        if (isTyping || (dialogueDataAtual != null && !terminouDialogo))
-            return; // impede clicar enquanto o diálogo atual ainda não acabou
-
+        if (isTyping) return;
+        if (!terminouDialogo) return;
         if (perguntasFeitas >= maxPerguntas) return;
 
         dialogueDataAtual = dialogues[perguntasFeitas];
         perguntasFeitas++;
         linhaAtual = 0;
         terminouDialogo = false;
-
-        painelDialogo.SetActive(true); //mostra o painel ao iniciar novo diálogo
-
-        if (typingCoroutine != null)
-            StopCoroutine(typingCoroutine);
-        
 
         MostrarFalaAtual();
 
@@ -98,7 +84,7 @@ public class ScriptChoice : MonoBehaviour
 
     void Update()
     {
-        if (dialogueDataAtual == null || terminouDialogo) return;
+        if (dialogueDataAtual == null) return;
 
         if (Input.GetKeyDown(KeyCode.Return))
             AvancarFala();
@@ -110,14 +96,12 @@ public class ScriptChoice : MonoBehaviour
 
         if (isTyping)
         {
-            // Termina a digitação imediatamente
-            if (typingCoroutine != null) StopCoroutine(typingCoroutine);
+            StopCoroutine(typingCoroutine);
             dialogueText.text = dialogueDataAtual.falas[linhaAtual].texto;
             isTyping = false;
             return;
         }
 
-        // Vai pra proxima fala
         linhaAtual++;
 
         if (linhaAtual < dialogueDataAtual.falas.Count)
@@ -126,21 +110,18 @@ public class ScriptChoice : MonoBehaviour
         }
         else
         {
-            // Terminou o dialogo atual
             terminouDialogo = true;
             dialogueText.text = "";
             nomeText.text = "";
-
-            painelDialogo.SetActive(false); //esconde o painel quando termina
         }
     }
 
     void MostrarFalaAtual()
     {
-        if (dialogueDataAtual == null || linhaAtual >= dialogueDataAtual.falas.Count)
-            return;
+        if (linhaAtual >= dialogueDataAtual.falas.Count) return;
 
         var fala = dialogueDataAtual.falas[linhaAtual];
+
         nomeText.text = fala.nomePersonagem;
         dialogueText.text = "";
 
@@ -166,74 +147,64 @@ public class ScriptChoice : MonoBehaviour
 
     public void EscolherEnvenenar()
     {
-        painelDialogo.SetActive(true);
-        terminouDialogo = false;
+        PararDialogo();
+        OcultarBotoesFinais();
 
-        // impostor envenenado → nenhuma morte ocorre
+        painelDialogo.SetActive(true);
+
         if (npcEhImpostor)
         {
             GameStats.relatorioUltimaNoite =
                 "Nenhuma morte ocorreu esta noite. O impostor foi neutralizado antes de atacar.";
-
-            EscreverResultadoFinal(GameStats.relatorioUltimaNoite);
         }
         else
         {
-            // inocente envenenado → 1 morte
-            GameStats.mortesTotais++;
-
+            GameStats.totalMortes++;
             GameStats.relatorioUltimaNoite =
-                $"{GameStats.mortesTotais} humanos foram mortos esta noite.";
-
-            EscreverResultadoFinal(GameStats.relatorioUltimaNoite);
+                $"{GameStats.totalMortes} humanos foram mortos esta noite.";
         }
 
-        StartCoroutine(VoltarParaCenaGame());
+        GameStats.mostrarRadio = true;
+
+        SceneManager.LoadScene("Game");
     }
 
     public void EscolherDeixarIr()
     {
-        painelDialogo.SetActive(true);
-        terminouDialogo = false;
+        PararDialogo();
+        OcultarBotoesFinais();
 
-        // impostor livre → 1 morte brutal
+        painelDialogo.SetActive(true);
+
         if (npcEhImpostor)
         {
-            GameStats.mortesTotais++;
-
+            GameStats.totalMortes++;
             GameStats.relatorioUltimaNoite =
-                $"{GameStats.mortesTotais} corpos foram encontrados mutilados naquela noite.";
-
-            EscreverResultadoFinal(GameStats.relatorioUltimaNoite);
+                $"{GameStats.totalMortes} corpos foram encontrados mutilados naquela noite.";
         }
         else
         {
-            // inocente livre → nenhuma morte
-            GameStats.relatorioUltimaNoite =
-                "Nada foi reportado esta noite.";
-
-            EscreverResultadoFinal(GameStats.relatorioUltimaNoite);
+            GameStats.relatorioUltimaNoite = "Nada foi reportado esta noite.";
         }
 
-        StartCoroutine(VoltarParaCenaGame());
+        GameStats.mostrarRadio = true;
+
+        SceneManager.LoadScene("Game");
     }
 
-
-    void EscreverResultadoFinal(string msg)
+    void OcultarBotoesFinais()
     {
-        dialogueText.text = "";
-        nomeText.text = "Relatório da Noite";
-
-        if (typingCoroutine != null)
-            StopCoroutine(typingCoroutine);
-
-        typingCoroutine = StartCoroutine(TypeLine(msg));
+        botaoPerguntar.SetActive(false);
+        botaoEnvenenar.SetActive(false);
+        botaoDeixarIr.SetActive(false);
     }
 
-    IEnumerator VoltarParaCenaGame()
+
+    public void PararDialogo()
     {
-        yield return new WaitForSeconds(2.5f);
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
+        StopAllCoroutines();
+        isTyping = false;
+        this.enabled = false;
     }
-
 }
+
