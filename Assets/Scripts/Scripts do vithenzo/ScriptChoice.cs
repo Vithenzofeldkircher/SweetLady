@@ -30,12 +30,12 @@ public class ScriptChoice : MonoBehaviour
 
     void Start()
     {
-        npcEhImpostor = (Random.Range(0, 20) == 0);
+        npcEhImpostor = GameStats.currentNPCIsImpostor;
 
         if (npcEhImpostor)
-            Debug.Log("⚠️ NPC GERADO COMO IMPOSTOR!");
+            Debug.Log("NPC É IMPOSTOR (ROOM SCENE)!");
         else
-            Debug.Log("NPC inocente.");
+            Debug.Log("NPC Inocente (ROOM SCENE).");
 
         botaoEnvenenar.SetActive(false);
         botaoDeixarIr.SetActive(false);
@@ -47,6 +47,7 @@ public class ScriptChoice : MonoBehaviour
 
         IniciarDialogoAutomatico();
     }
+
 
     void IniciarDialogoAutomatico()
     {
@@ -152,19 +153,21 @@ public class ScriptChoice : MonoBehaviour
 
         painelDialogo.SetActive(true);
 
-        if (npcEhImpostor)
+        if (GameStats.currentNPCIsImpostor)
         {
-            GameStats.relatorioUltimaNoite =
-                "Nenhuma morte ocorreu esta noite. O impostor foi neutralizado antes de atacar.";
+            GameStats.totalImpostoresMortos++;
+            GameStats.relatorioUltimaNoite = $"{GameStats.totalImpostoresMortos} impostores foram encontrados mortos esta noite.";
         }
         else
         {
-            GameStats.totalMortes++;
-            GameStats.relatorioUltimaNoite =
-                $"{GameStats.totalMortes} humanos foram mortos esta noite.";
+            GameStats.totalInocentesMortos++;
+            GameStats.relatorioUltimaNoite = $"{GameStats.totalInocentesMortos} humanos foram mortos esta noite.";
         }
 
+        // preparar radio para próxima ida ao Game
         GameStats.mostrarRadio = true;
+        GameStats.shouldGoToRoomAfterDialog = true; // manter fluxo caso queira novos encontros
+        VerificarFimDeJogo();
 
         SceneManager.LoadScene("Game");
     }
@@ -176,21 +179,42 @@ public class ScriptChoice : MonoBehaviour
 
         painelDialogo.SetActive(true);
 
-        if (npcEhImpostor)
+        if (GameStats.currentNPCIsImpostor)
         {
-            GameStats.totalMortes++;
-            GameStats.relatorioUltimaNoite =
-                $"{GameStats.totalMortes} corpos foram encontrados mutilados naquela noite.";
+            GameStats.totalInocentesMortos++; // impostor que ficou pode matar inocentes: contamos como vítimas
+            GameStats.relatorioUltimaNoite = $"{GameStats.totalInocentesMortos} pessoas foram mortas naquela noite.";
         }
         else
         {
-            GameStats.relatorioUltimaNoite = "Nada foi reportado esta noite.";
+            GameStats.relatorioUltimaNoite = "Nenhuma tragédia ocorreu ainda essa noite.";
         }
 
         GameStats.mostrarRadio = true;
+        GameStats.shouldGoToRoomAfterDialog = true;
+        VerificarFimDeJogo();
 
         SceneManager.LoadScene("Game");
     }
+
+    private void VerificarFimDeJogo()
+    {
+        // Vitória: 10 impostores mortos
+        if (GameStats.totalImpostoresMortos >= 10)
+        {
+            Debug.Log("[Game] Jogador venceu! 10 impostores mortos.");
+            SceneManager.LoadScene("VictoryScene"); // crie essa cena
+            return;
+        }
+
+        // Derrota: 5 inocentes mortos
+        if (GameStats.totalInocentesMortos >= 5)
+        {
+            Debug.Log("[Game] Jogador perdeu! 5 inocentes mortos.");
+            SceneManager.LoadScene("GameOverScene"); // crie essa cena
+            return;
+        }
+    }
+
 
     void OcultarBotoesFinais()
     {

@@ -29,8 +29,10 @@ public class RadioNoite : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
 
         GameStats.mostrarRadio = false;
+        Debug.Log("[RadioNoite] Radio terminou. Relatório: " + GameStats.relatorioUltimaNoite);
         manager.MostrarDialogoNormal();
     }
+
 
     IEnumerator Escrever(string linha)
     {

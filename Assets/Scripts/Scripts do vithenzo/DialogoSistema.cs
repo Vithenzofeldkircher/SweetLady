@@ -89,8 +89,13 @@ public class DialogoSistema : MonoBehaviour
 
         var falaAtual = dialogueData.falas[currentLine];
         nomeText.text = falaAtual.nomePersonagem;
+
+        // Processa o texto caso o NPC atual seja impostor
+        bool npcIsImpostor = GameStats.currentNPCIsImpostor;
+        string processed = TextProcessor.ProcessForImpostor(npcIsImpostor, falaAtual.texto);
+
         StopAllCoroutines();
-        StartCoroutine(TypeLine(falaAtual.texto));
+        StartCoroutine(TypeLine(processed));
     }
 
     private IEnumerator TypeLine(string line)
@@ -107,6 +112,7 @@ public class DialogoSistema : MonoBehaviour
         isTyping = false;
     }
 
+
     private void EncerrarDialogo()
     {
         Debug.Log("[DialogoSistema] Fim do diálogo.");
@@ -122,7 +128,16 @@ public class DialogoSistema : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+
+        
+        if (GameStats.shouldGoToRoomAfterDialog)
+        {
+            // desativa para não repetir
+            GameStats.shouldGoToRoomAfterDialog = false;
+            SceneManager.LoadScene("RoomScene"); // ajuste o nome se necessário
+        }
     }
+
 
     private void TrocarCena()
     {
@@ -136,4 +151,24 @@ public class DialogoSistema : MonoBehaviour
             Debug.LogWarning("[DialogoSistema] Nome da próxima cena não definido!");
         }
     }
+
+    public static class TextProcessor
+    {
+        // Se isImpostor == true, força os caracteres 't' e 'T' para 'T'.
+        public static string ProcessForImpostor(bool isImpostor, string input)
+        {
+            if (!isImpostor || string.IsNullOrEmpty(input))
+                return input;
+
+            char[] arr = input.ToCharArray();
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] == 't' || arr[i] == 'T')
+                    arr[i] = 'T';
+            }
+            return new string(arr);
+        }
+    }
+
+
 }
