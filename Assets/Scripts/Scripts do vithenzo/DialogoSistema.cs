@@ -154,21 +154,24 @@ public class DialogoSistema : MonoBehaviour
 
     public static class TextProcessor
     {
-        // Se isImpostor == true, força os caracteres 't' e 'T' para 'T'.
         public static string ProcessForImpostor(bool isImpostor, string input)
         {
+            // Só aplica na RoomScene
+            if (SceneManager.GetActiveScene().name != "RoomScene")
+                return input;
+
             if (!isImpostor || string.IsNullOrEmpty(input))
                 return input;
 
             char[] arr = input.ToCharArray();
             for (int i = 0; i < arr.Length; i++)
             {
-                if (arr[i] == 't' || arr[i] == 'T')
+                if (arr[i] == 't')
                     arr[i] = 'T';
             }
+
             return new string(arr);
         }
     }
-
 
 }

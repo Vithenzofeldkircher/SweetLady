@@ -28,8 +28,12 @@ public class ScriptChoice : MonoBehaviour
     private Coroutine typingCoroutine;
     private bool npcEhImpostor;
 
-    void Start()
+    IEnumerator Start()
     {
+
+        // Espera 1 frame até o NPCSpawner atualizar GameStats.currentNPCIsImpostor
+        yield return null;
+
         npcEhImpostor = GameStats.currentNPCIsImpostor;
 
         if (npcEhImpostor)
@@ -47,6 +51,7 @@ public class ScriptChoice : MonoBehaviour
 
         IniciarDialogoAutomatico();
     }
+
 
 
     void IniciarDialogoAutomatico()
@@ -117,11 +122,28 @@ public class ScriptChoice : MonoBehaviour
         }
     }
 
+    string AplicarFiltroImpostor(string texto)
+    {
+        // só aplica na RoomScene
+        if (SceneManager.GetActiveScene().name != "RoomScene")
+            return texto;
+
+        // só aplica se o NPC for impostor
+        if (!npcEhImpostor)
+            return texto;
+
+        return texto.Replace("t", "T");
+    }
+
+
     void MostrarFalaAtual()
     {
         if (linhaAtual >= dialogueDataAtual.falas.Count) return;
 
         var fala = dialogueDataAtual.falas[linhaAtual];
+
+        // troca aqui!
+        string texto = AplicarFiltroImpostor(fala.texto);
 
         nomeText.text = fala.nomePersonagem;
         dialogueText.text = "";
@@ -129,8 +151,9 @@ public class ScriptChoice : MonoBehaviour
         if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
 
-        typingCoroutine = StartCoroutine(TypeLine(fala.texto));
+        typingCoroutine = StartCoroutine(TypeLine(texto));
     }
+
 
     IEnumerator TypeLine(string line)
     {
@@ -230,5 +253,7 @@ public class ScriptChoice : MonoBehaviour
         isTyping = false;
         this.enabled = false;
     }
+
+
 }
 
