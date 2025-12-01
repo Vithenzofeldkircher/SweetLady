@@ -11,7 +11,7 @@ public class ScriptScene : MonoBehaviour
 
     public void trocaDeCenaGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Victoria");
         Time.timeScale = 1.0f;
     }
 
