@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Creditos.unity
     guid: b042686e3692a7445bbb98bff5b66e28
   - enabled: 1
+    path: Assets/Scenes/Victoria.unity
+    guid: aafebd62cba28d042a4ba4de833e8cf9
+  - enabled: 1
     path: Assets/Scenes/RoomScene.unity
     guid: 921b529de1229bf4a9a9fe039b28bca7
   - enabled: 1
