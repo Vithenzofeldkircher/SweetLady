@@ -1,0 +1,3965 @@
+fileFormatVersion: 2
+guid: 4e8954e2539f92c41bacba106fa66020
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -810936427086372642
+    second: NES_Touring_police_Car_Sprite_Sheet_0
+  - first:
+      213: -4179742726453530911
+    second: NES_Touring_police_Car_Sprite_Sheet_1
+  - first:
+      213: -1130341520099525281
+    second: NES_Touring_police_Car_Sprite_Sheet_2
+  - first:
+      213: -5322189487479244632
+    second: NES_Touring_police_Car_Sprite_Sheet_3
+  - first:
+      213: -77076808162638914
+    second: NES_Touring_police_Car_Sprite_Sheet_4
+  - first:
+      213: 1009666380084594691
+    second: NES_Touring_police_Car_Sprite_Sheet_5
+  - first:
+      213: 8496986797178030369
+    second: NES_Touring_police_Car_Sprite_Sheet_6
+  - first:
+      213: -6283005442069737474
+    second: NES_Touring_police_Car_Sprite_Sheet_7
+  - first:
+      213: -4103565980279193911
+    second: NES_Touring_police_Car_Sprite_Sheet_8
+  - first:
+      213: -5003245918892629918
+    second: NES_Touring_police_Car_Sprite_Sheet_9
+  - first:
+      213: 6693441579161039281
+    second: NES_Touring_police_Car_Sprite_Sheet_10
+  - first:
+      213: -210673552095459534
+    second: NES_Touring_police_Car_Sprite_Sheet_11
+  - first:
+      213: 2620033681136821137
+    second: NES_Touring_police_Car_Sprite_Sheet_12
+  - first:
+      213: 8256726870464251647
+    second: NES_Touring_police_Car_Sprite_Sheet_13
+  - first:
+      213: -4633708615769464251
+    second: NES_Touring_police_Car_Sprite_Sheet_14
+  - first:
+      213: -1999442644148385578
+    second: NES_Touring_police_Car_Sprite_Sheet_15
+  - first:
+      213: 1645027651957335000
+    second: NES_Touring_police_Car_Sprite_Sheet_16
+  - first:
+      213: 9222602648196393838
+    second: NES_Touring_police_Car_Sprite_Sheet_17
+  - first:
+      213: 1250910359783352035
+    second: NES_Touring_police_Car_Sprite_Sheet_18
+  - first:
+      213: 4555613082594536754
+    second: NES_Touring_police_Car_Sprite_Sheet_19
+  - first:
+      213: 2211438210281019350
+    second: NES_Touring_police_Car_Sprite_Sheet_20
+  - first:
+      213: 5559727550947912767
+    second: NES_Touring_police_Car_Sprite_Sheet_21
+  - first:
+      213: -1954899935158613350
+    second: NES_Touring_police_Car_Sprite_Sheet_22
+  - first:
+      213: -7565035602032025310
+    second: NES_Touring_police_Car_Sprite_Sheet_23
+  - first:
+      213: 2384276249296173987
+    second: NES_Touring_police_Car_Sprite_Sheet_24
+  - first:
+      213: -1966868043060757547
+    second: NES_Touring_police_Car_Sprite_Sheet_25
+  - first:
+      213: -3442754493992692297
+    second: NES_Touring_police_Car_Sprite_Sheet_26
+  - first:
+      213: 6910333427518825151
+    second: NES_Touring_police_Car_Sprite_Sheet_27
+  - first:
+      213: 2368247330294824468
+    second: NES_Touring_police_Car_Sprite_Sheet_28
+  - first:
+      213: -6886485928651595141
+    second: NES_Touring_police_Car_Sprite_Sheet_29
+  - first:
+      213: 1027000196829757137
+    second: NES_Touring_police_Car_Sprite_Sheet_30
+  - first:
+      213: 8849320633390566178
+    second: NES_Touring_police_Car_Sprite_Sheet_31
+  - first:
+      213: -6238930793454807764
+    second: NES_Touring_police_Car_Sprite_Sheet_32
+  - first:
+      213: -8581938852727792546
+    second: NES_Touring_police_Car_Sprite_Sheet_33
+  - first:
+      213: 5914323491630498899
+    second: NES_Touring_police_Car_Sprite_Sheet_34
+  - first:
+      213: 5180146070133569239
+    second: NES_Touring_police_Car_Sprite_Sheet_35
+  - first:
+      213: -1369022983879503346
+    second: NES_Touring_police_Car_Sprite_Sheet_36
+  - first:
+      213: 1995682920522633168
+    second: NES_Touring_police_Car_Sprite_Sheet_37
+  - first:
+      213: -3506985065759055854
+    second: NES_Touring_police_Car_Sprite_Sheet_38
+  - first:
+      213: -512304832097793574
+    second: NES_Touring_police_Car_Sprite_Sheet_39
+  - first:
+      213: 4103422720180637489
+    second: NES_Touring_police_Car_Sprite_Sheet_40
+  - first:
+      213: -3979409032562978856
+    second: NES_Touring_police_Car_Sprite_Sheet_41
+  - first:
+      213: -331364508668278187
+    second: NES_Touring_police_Car_Sprite_Sheet_42
+  - first:
+      213: -7936400795772412449
+    second: NES_Touring_police_Car_Sprite_Sheet_43
+  - first:
+      213: -9080435754276218875
+    second: NES_Touring_police_Car_Sprite_Sheet_44
+  - first:
+      213: 4127286871851819866
+    second: NES_Touring_police_Car_Sprite_Sheet_45
+  - first:
+      213: -5518477141877921037
+    second: NES_Touring_police_Car_Sprite_Sheet_46
+  - first:
+      213: -5592826845754670516
+    second: NES_Touring_police_Car_Sprite_Sheet_47
+  - first:
+      213: -2621597448996909945
+    second: NES_Touring_police_Car_Sprite_Sheet_48
+  - first:
+      213: -6632778785263348584
+    second: NES_Touring_police_Car_Sprite_Sheet_49
+  - first:
+      213: 5535974896143609237
+    second: NES_Touring_police_Car_Sprite_Sheet_50
+  - first:
+      213: 7780627890090684559
+    second: NES_Touring_police_Car_Sprite_Sheet_51
+  - first:
+      213: -3803191090562240567
+    second: NES_Touring_police_Car_Sprite_Sheet_52
+  - first:
+      213: 3475966688224332057
+    second: NES_Touring_police_Car_Sprite_Sheet_53
+  - first:
+      213: 1118954970087494797
+    second: NES_Touring_police_Car_Sprite_Sheet_54
+  - first:
+      213: -2067667105612997015
+    second: NES_Touring_police_Car_Sprite_Sheet_55
+  - first:
+      213: -7077430457602886413
+    second: NES_Touring_police_Car_Sprite_Sheet_56
+  - first:
+      213: 3442408707789009666
+    second: NES_Touring_police_Car_Sprite_Sheet_57
+  - first:
+      213: 5289461742179234653
+    second: NES_Touring_police_Car_Sprite_Sheet_58
+  - first:
+      213: -1105509951837483985
+    second: NES_Touring_police_Car_Sprite_Sheet_59
+  - first:
+      213: 2329569609432707249
+    second: NES_Touring_police_Car_Sprite_Sheet_60
+  - first:
+      213: 8456060492782458983
+    second: NES_Touring_police_Car_Sprite_Sheet_61
+  - first:
+      213: 3549227188216104313
+    second: NES_Touring_police_Car_Sprite_Sheet_62
+  - first:
+      213: -2841994209935683711
+    second: NES_Touring_police_Car_Sprite_Sheet_63
+  - first:
+      213: -5524860928272965505
+    second: NES_Touring_police_Car_Sprite_Sheet_64
+  - first:
+      213: 4881916109775004410
+    second: NES_Touring_police_Car_Sprite_Sheet_65
+  - first:
+      213: 2224921282834836578
+    second: NES_Touring_police_Car_Sprite_Sheet_66
+  - first:
+      213: -4849859693792942504
+    second: NES_Touring_police_Car_Sprite_Sheet_67
+  - first:
+      213: 6147313140022390779
+    second: NES_Touring_police_Car_Sprite_Sheet_68
+  - first:
+      213: 563391721719478534
+    second: NES_Touring_police_Car_Sprite_Sheet_69
+  - first:
+      213: 7266584918944482497
+    second: NES_Touring_police_Car_Sprite_Sheet_70
+  - first:
+      213: -2888260317175315344
+    second: NES_Touring_police_Car_Sprite_Sheet_71
+  - first:
+      213: -7653336878388384601
+    second: NES_Touring_police_Car_Sprite_Sheet_72
+  - first:
+      213: -3301316062956252829
+    second: NES_Touring_police_Car_Sprite_Sheet_73
+  - first:
+      213: -6282770151013645924
+    second: NES_Touring_police_Car_Sprite_Sheet_74
+  - first:
+      213: 8735270194384443745
+    second: NES_Touring_police_Car_Sprite_Sheet_75
+  - first:
+      213: 1776688766211135460
+    second: NES_Touring_police_Car_Sprite_Sheet_76
+  - first:
+      213: -3075859216402613732
+    second: NES_Touring_police_Car_Sprite_Sheet_77
+  - first:
+      213: 3731587815560457863
+    second: NES_Touring_police_Car_Sprite_Sheet_78
+  - first:
+      213: -3413581166495383418
+    second: NES_Touring_police_Car_Sprite_Sheet_79
+  - first:
+      213: 111177488040686810
+    second: NES_Touring_police_Car_Sprite_Sheet_80
+  - first:
+      213: 5508449066076394340
+    second: NES_Touring_police_Car_Sprite_Sheet_81
+  - first:
+      213: 4725216255088616894
+    second: NES_Touring_police_Car_Sprite_Sheet_82
+  - first:
+      213: -3295735466063476841
+    second: NES_Touring_police_Car_Sprite_Sheet_83
+  - first:
+      213: -1525947808213060497
+    second: NES_Touring_police_Car_Sprite_Sheet_84
+  - first:
+      213: -3217207163008329747
+    second: NES_Touring_police_Car_Sprite_Sheet_85
+  - first:
+      213: -8871699932540920408
+    second: NES_Touring_police_Car_Sprite_Sheet_86
+  - first:
+      213: 4994603095478999181
+    second: NES_Touring_police_Car_Sprite_Sheet_87
+  - first:
+      213: 4328965182329526289
+    second: NES_Touring_police_Car_Sprite_Sheet_88
+  - first:
+      213: 5777933905962348435
+    second: NES_Touring_police_Car_Sprite_Sheet_89
+  - first:
+      213: -4445048866704709414
+    second: NES_Touring_police_Car_Sprite_Sheet_90
+  - first:
+      213: 2581018981629656735
+    second: NES_Touring_police_Car_Sprite_Sheet_91
+  - first:
+      213: -2146235399868764578
+    second: NES_Touring_police_Car_Sprite_Sheet_92
+  - first:
+      213: -2981243184006287934
+    second: NES_Touring_police_Car_Sprite_Sheet_93
+  - first:
+      213: -1949465567900677117
+    second: NES_Touring_police_Car_Sprite_Sheet_94
+  - first:
+      213: -4432742751707951776
+    second: NES_Touring_police_Car_Sprite_Sheet_95
+  - first:
+      213: -8411665548029290307
+    second: NES_Touring_police_Car_Sprite_Sheet_96
+  - first:
+      213: -161687548527191323
+    second: NES_Touring_police_Car_Sprite_Sheet_97
+  - first:
+      213: 5099250363097894792
+    second: NES_Touring_police_Car_Sprite_Sheet_98
+  - first:
+      213: 3901635903756102782
+    second: NES_Touring_police_Car_Sprite_Sheet_99
+  - first:
+      213: 8241940760658989185
+    second: NES_Touring_police_Car_Sprite_Sheet_100
+  - first:
+      213: -8686706387514814699
+    second: NES_Touring_police_Car_Sprite_Sheet_101
+  - first:
+      213: 1119397425607453090
+    second: NES_Touring_police_Car_Sprite_Sheet_102
+  - first:
+      213: -8598132878081883407
+    second: NES_Touring_police_Car_Sprite_Sheet_103
+  - first:
+      213: -4787269316354642013
+    second: NES_Touring_police_Car_Sprite_Sheet_104
+  - first:
+      213: 7714388393718044169
+    second: NES_Touring_police_Car_Sprite_Sheet_105
+  - first:
+      213: 973822615185957945
+    second: NES_Touring_police_Car_Sprite_Sheet_106
+  - first:
+      213: 3539498583753375899
+    second: NES_Touring_police_Car_Sprite_Sheet_107
+  - first:
+      213: 2050563427563910549
+    second: NES_Touring_police_Car_Sprite_Sheet_108
+  - first:
+      213: -8633872973311527484
+    second: NES_Touring_police_Car_Sprite_Sheet_109
+  - first:
+      213: 8688031648511170051
+    second: NES_Touring_police_Car_Sprite_Sheet_110
+  - first:
+      213: -7008128507950171302
+    second: NES_Touring_police_Car_Sprite_Sheet_111
+  - first:
+      213: 637789143948482484
+    second: NES_Touring_police_Car_Sprite_Sheet_112
+  - first:
+      213: -5439321549671602673
+    second: NES_Touring_police_Car_Sprite_Sheet_113
+  - first:
+      213: -1747092447159601416
+    second: NES_Touring_police_Car_Sprite_Sheet_114
+  - first:
+      213: -3149787736972224575
+    second: NES_Touring_police_Car_Sprite_Sheet_115
+  - first:
+      213: 7645435614268029599
+    second: NES_Touring_police_Car_Sprite_Sheet_116
+  - first:
+      213: -1760880686391003411
+    second: NES_Touring_police_Car_Sprite_Sheet_117
+  - first:
+      213: -5547726841487934949
+    second: NES_Touring_police_Car_Sprite_Sheet_118
+  - first:
+      213: -1582477001461413031
+    second: NES_Touring_police_Car_Sprite_Sheet_119
+  - first:
+      213: -5898706678976747658
+    second: NES_Touring_police_Car_Sprite_Sheet_120
+  - first:
+      213: 3341553943049929771
+    second: NES_Touring_police_Car_Sprite_Sheet_121
+  - first:
+      213: -4560229090589607958
+    second: NES_Touring_police_Car_Sprite_Sheet_122
+  - first:
+      213: 5948559605477966653
+    second: NES_Touring_police_Car_Sprite_Sheet_123
+  - first:
+      213: -1213192279158358540
+    second: NES_Touring_police_Car_Sprite_Sheet_124
+  - first:
+      213: 7629672361051503450
+    second: NES_Touring_police_Car_Sprite_Sheet_125
+  - first:
+      213: 320026151041642624
+    second: NES_Touring_police_Car_Sprite_Sheet_126
+  - first:
+      213: -1703903012270375015
+    second: NES_Touring_police_Car_Sprite_Sheet_127
+  - first:
+      213: -6981917774443763961
+    second: NES_Touring_police_Car_Sprite_Sheet_128
+  - first:
+      213: -4632071180195795783
+    second: NES_Touring_police_Car_Sprite_Sheet_129
+  - first:
+      213: -4820688490734686681
+    second: NES_Touring_police_Car_Sprite_Sheet_130
+  - first:
+      213: 7308459228822453770
+    second: NES_Touring_police_Car_Sprite_Sheet_131
+  - first:
+      213: 3238931812862925949
+    second: NES_Touring_police_Car_Sprite_Sheet_132
+  - first:
+      213: -7482632688070417544
+    second: NES_Touring_police_Car_Sprite_Sheet_133
+  - first:
+      213: 2930568688818056110
+    second: NES_Touring_police_Car_Sprite_Sheet_134
+  - first:
+      213: 1968341438452873837
+    second: NES_Touring_police_Car_Sprite_Sheet_135
+  - first:
+      213: -494039592814758812
+    second: NES_Touring_police_Car_Sprite_Sheet_136
+  - first:
+      213: 5841517635385852329
+    second: NES_Touring_police_Car_Sprite_Sheet_137
+  - first:
+      213: -2111421185060149494
+    second: NES_Touring_police_Car_Sprite_Sheet_138
+  - first:
+      213: 8645746469842129179
+    second: NES_Touring_police_Car_Sprite_Sheet_139
+  - first:
+      213: -9005400515637173231
+    second: NES_Touring_police_Car_Sprite_Sheet_140
+  - first:
+      213: 3643093094800450895
+    second: NES_Touring_police_Car_Sprite_Sheet_141
+  - first:
+      213: -1388881569331216509
+    second: NES_Touring_police_Car_Sprite_Sheet_142
+  - first:
+      213: -5132045257514933429
+    second: NES_Touring_police_Car_Sprite_Sheet_143
+  - first:
+      213: 8856187545851350815
+    second: NES_Touring_police_Car_Sprite_Sheet_144
+  - first:
+      213: -3694986415866345598
+    second: NES_Touring_police_Car_Sprite_Sheet_145
+  - first:
+      213: 2836935809111142742
+    second: NES_Touring_police_Car_Sprite_Sheet_146
+  - first:
+      213: -7569345801929200016
+    second: NES_Touring_police_Car_Sprite_Sheet_147
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 584
+        width: 63
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed0a718bd99feb4f0800000000000000
+      internalID: -810936427086372642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 584
+        width: 51
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eee631b2229ef5c0800000000000000
+      internalID: -4179742726453530911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 584
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5db79350683050f0800000000000000
+      internalID: -1130341520099525281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 584
+        width: 51
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a83b7bfbd8c326b0800000000000000
+      internalID: -5322189487479244632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 584
+        width: 48
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb38b052d0b2eeef0800000000000000
+      internalID: -77076808162638914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 558
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 308c896293e030e00800000000000000
+      internalID: 1009666380084594691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 502
+        width: 99
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1290bfa197c5be570800000000000000
+      internalID: 8496986797178030369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 504
+        width: 94
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eff4697d6d74ec8a0800000000000000
+      internalID: -6283005442069737474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 556
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ceb4198b743d07c0800000000000000
+      internalID: -4103565980279193911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 547
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2606b785856e09ab0800000000000000
+      internalID: -5003245918892629918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 504
+        width: 94
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b139b227a1e3ec50800000000000000
+      internalID: 6693441579161039281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 513
+        width: 15
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 237c7c34589831df0800000000000000
+      internalID: -210673552095459534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 543
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19328bf50ca3c5420800000000000000
+      internalID: 2620033681136821137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 546
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff6c179b759c59270800000000000000
+      internalID: 8256726870464251647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 546
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 542e46c7092c1bfb0800000000000000
+      internalID: -4633708615769464251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 516
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d884c6328d8044e0800000000000000
+      internalID: -1999442644148385578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 528
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d3ac980fef44d610800000000000000
+      internalID: 1645027651957335000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 503
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6ba25ebe344dff70800000000000000
+      internalID: 9222602648196393838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 487
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e62eb838502c5110800000000000000
+      internalID: 1250910359783352035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 433
+        width: 15
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23d6b2246f9c83f30800000000000000
+      internalID: 4555613082594536754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 431
+        width: 121
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d79686e55b90be10800000000000000
+      internalID: 2211438210281019350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 447
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3ce33a30ce182d40800000000000000
+      internalID: 5559727550947912767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 447
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9acf61dddcced4e0800000000000000
+      internalID: -1954899935158613350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 449
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 221a2b38338930790800000000000000
+      internalID: -7565035602032025310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 449
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3abf2b5cd96a61120800000000000000
+      internalID: 2384276249296173987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 424
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dbbb4d8fe744b4e0800000000000000
+      internalID: -1966868043060757547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 399
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b59fa83701e830d0800000000000000
+      internalID: -3442754493992692297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 399
+        width: 126
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb264cac3af66ef50800000000000000
+      internalID: 6910333427518825151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 399
+        width: 40
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41e7d7e3664bdd020800000000000000
+      internalID: 2368247330294824468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 399
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72eef7b8894e60a0800000000000000
+      internalID: -6886485928651595141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 399
+        width: 40
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1de3b4cdc33a04e00800000000000000
+      internalID: 1027000196829757137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 399
+        width: 127
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22b87c8fa3a1fca70800000000000000
+      internalID: 8849320633390566178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 338
+        width: 15
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2551e5af7dda69a0800000000000000
+      internalID: -6238930793454807764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 377
+        width: 39
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5c590f1514d6e880800000000000000
+      internalID: -8581938852727792546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 377
+        width: 34
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 354426551e5e31250800000000000000
+      internalID: 5914323491630498899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 377
+        width: 34
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d672fab76393e740800000000000000
+      internalID: 5180146070133569239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 377
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e02548c79d0400de0800000000000000
+      internalID: -1369022983879503346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 377
+        width: 34
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dfc01aea0712bb10800000000000000
+      internalID: 1995682920522633168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 377
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 210e4dad9afa45fc0800000000000000
+      internalID: -3506985065759055854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 377
+        width: 34
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad94812387de3e8f0800000000000000
+      internalID: -512304832097793574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 377
+        width: 34
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13f42af193942f830800000000000000
+      internalID: 4103422720180637489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 377
+        width: 39
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8df4a16919c46c8c0800000000000000
+      internalID: -3979409032562978856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 354
+        width: 40
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ac7a92cb1c66bf0800000000000000
+      internalID: -331364508668278187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 354
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdd9bdc668d3cd190800000000000000
+      internalID: -7936400795772412449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 354
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5081c9caacfcbf180800000000000000
+      internalID: -9080435754276218875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 354
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a536cdaea81174930800000000000000
+      internalID: 4127286871851819866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 354
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fae041174e6a63b0800000000000000
+      internalID: -5518477141877921037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 354
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c424688ad994262b0800000000000000
+      internalID: -5592826845754670516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 354
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c087c82073e9bd0800000000000000
+      internalID: -2621597448996909945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 354
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89491a636d2a3f3a0800000000000000
+      internalID: -6632778785263348584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 354
+        width: 36
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59dae1256dbb3dc40800000000000000
+      internalID: 5535974896143609237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f803a5ea7d75afb60800000000000000
+      internalID: 7780627890090684559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 335
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cf6b127ad9583bc0800000000000000
+      internalID: -3803191090562240567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 335
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 919c3b6594d1d3030800000000000000
+      internalID: 3475966688224332057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 335
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8419b7ed93578f00800000000000000
+      internalID: 1118954970087494797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 335
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96e5d20f8bb2e43e0800000000000000
+      internalID: -2067667105612997015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 335
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f4bc042f7ae7cd90800000000000000
+      internalID: -7077430457602886413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 335
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 203b9772b74e5cf20800000000000000
+      internalID: 3442408707789009666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 335
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d53bc930e61f76940800000000000000
+      internalID: 5289461742179234653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 335
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2c41195e8078a0f0800000000000000
+      internalID: -1105509951837483985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 335
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b038c9973b445020800000000000000
+      internalID: 2329569609432707249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 319
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 768538f4736f95570800000000000000
+      internalID: 8456060492782458983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 319
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97587c4b253614130800000000000000
+      internalID: 3549227188216104313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 319
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18f0117d2553f88d0800000000000000
+      internalID: -2841994209935683711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 319
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f70ead8f140c353b0800000000000000
+      internalID: -5524860928272965505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 319
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af2656a16dc00c340800000000000000
+      internalID: 4881916109775004410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 319
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ca39c5e1280ee10800000000000000
+      internalID: 2224921282834836578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 319
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 856acfcdd46d1bcb0800000000000000
+      internalID: -4849859693792942504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 319
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff20222bb4af4550800000000000000
+      internalID: 6147313140022390779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 319
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6093c7239c191d700800000000000000
+      internalID: 563391721719478534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 304
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c485e7db7818d460800000000000000
+      internalID: 7266584918944482497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 304
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07488ef4b86dae7d0800000000000000
+      internalID: -2888260317175315344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 304
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ac634188a2e9c590800000000000000
+      internalID: -7653336878388384601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 304
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3619338288e5f22d0800000000000000
+      internalID: -3301316062956252829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 304
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c91876fc5dd1fc8a0800000000000000
+      internalID: -6282770151013645924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 304
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1699759d5f9e93970800000000000000
+      internalID: 8735270194384443745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 304
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e71172050118a810800000000000000
+      internalID: 1776688766211135460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 304
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1af53bd65a5055d0800000000000000
+      internalID: -3075859216402613732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 304
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78e28a2f85349c330800000000000000
+      internalID: 3731587815560457863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 263
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6804417d30680a0d0800000000000000
+      internalID: -3413581166495383418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 271
+        width: 125
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad47fa9165bfa8100800000000000000
+      internalID: 111177488040686810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 271
+        width: 40
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 463d0d69d31f17c40800000000000000
+      internalID: 5508449066076394340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 271
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb565731627539140800000000000000
+      internalID: 4725216255088616894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 271
+        width: 40
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79741af1e023342d0800000000000000
+      internalID: -3295735466063476841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 271
+        width: 125
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f64bca1ad8eb2dae0800000000000000
+      internalID: -1525947808213060497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 217
+        width: 15
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de7db08712f2a53d0800000000000000
+      internalID: -3217207163008329747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 243
+        width: 38
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ad9a076ae361e480800000000000000
+      internalID: -8871699932540920408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 243
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8897148d05605540800000000000000
+      internalID: 4994603095478999181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 243
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11819c1c5e2931c30800000000000000
+      internalID: 4328965182329526289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_89
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 243
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39f229056485f2050800000000000000
+      internalID: 5777933905962348435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_90
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 243
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad820da4b930052c0800000000000000
+      internalID: -4445048866704709414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_91
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 243
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9e7396c61f91d320800000000000000
+      internalID: 2581018981629656735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_92
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 243
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5e247a664a0732e0800000000000000
+      internalID: -2146235399868764578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_93
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 243
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cd20449e1f70a6d0800000000000000
+      internalID: -2981243184006287934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_94
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 243
+        width: 38
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ccc6b056b12f4e0800000000000000
+      internalID: -1949465567900677117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_95
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 221
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d82c7f3fbbb72c0800000000000000
+      internalID: -4432742751707951776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_96
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 221
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db8925040c2c34b80800000000000000
+      internalID: -8411665548029290307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_97
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 221
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eade61080291cdf0800000000000000
+      internalID: -161687548527191323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_98
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 221
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88f4b31303d24c640800000000000000
+      internalID: 5099250363097894792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_99
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 221
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7cea46ce25652630800000000000000
+      internalID: 3901635903756102782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_100
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 221
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18054e24471416270800000000000000
+      internalID: 8241940760658989185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_101
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 221
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51f0010909e927780800000000000000
+      internalID: -8686706387514814699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_102
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 221
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a9a1db1706e88f00800000000000000
+      internalID: 1119397425607453090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_103
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 221
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f28256c3bb4da880800000000000000
+      internalID: -8598132878081883407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 184
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3afed8abbe3309db0800000000000000
+      internalID: -4787269316354642013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_105
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 200
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 906d5fa1f530f0b60800000000000000
+      internalID: 7714388393718044169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_106
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 200
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 934a66c4286b38d00800000000000000
+      internalID: 973822615185957945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_107
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 200
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b904e977533de1130800000000000000
+      internalID: 3539498583753375899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_108
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 200
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 595ba51b290157c10800000000000000
+      internalID: 2050563427563910549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_109
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 200
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c5bbe566425e2880800000000000000
+      internalID: -8633872973311527484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_110
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 200
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3061cdec0c6129870800000000000000
+      internalID: 8688031648511170051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_111
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 200
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5b775fa0402ebe90800000000000000
+      internalID: -7008128507950171302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_112
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 200
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b756a6e8d1e9d800800000000000000
+      internalID: 637789143948482484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_113
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 200
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0662bc8ed5a384b0800000000000000
+      internalID: -5439321549671602673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_114
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 184
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f6b8410da411c7e0800000000000000
+      internalID: -1747092447159601416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_115
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 184
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c793e3ddb4b944d0800000000000000
+      internalID: -3149787736972224575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_116
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 184
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9af0951f2b0a1a60800000000000000
+      internalID: 7645435614268029599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_117
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 184
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de671d368581097e0800000000000000
+      internalID: -1760880686391003411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_118
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 184
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1a363ea4d38203b0800000000000000
+      internalID: -5547726841487934949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_119
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 184
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95bcaae2d89e90ae0800000000000000
+      internalID: -1582477001461413031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_120
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 184
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 677ed553785932ea0800000000000000
+      internalID: -5898706678976747658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_121
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 184
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b240c4d5b959f5e20800000000000000
+      internalID: 3341553943049929771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_122
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 184
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae7f001adcfc6b0c0800000000000000
+      internalID: -4560229090589607958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_123
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 160
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3380c1c1778d8250800000000000000
+      internalID: 5948559605477966653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_124
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 112
+        width: 15
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fdf484cc00e92fe0800000000000000
+      internalID: -1213192279158358540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_125
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 142
+        width: 338
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5b3711b69a02e960800000000000000
+      internalID: 7629672361051503450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_126
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 146
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0803cabb616f07400800000000000000
+      internalID: 320026151041642624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_127
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 104
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99ff7edec358a58e0800000000000000
+      internalID: -1703903012270375015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_128
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 102
+        width: 290
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7072b43a6ce3b1f90800000000000000
+      internalID: -6981917774443763961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_129
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 106
+        width: 50
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bcea1aadc397bfb0800000000000000
+      internalID: -4632071180195795783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_130
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 106
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72ee1f8db59791db0800000000000000
+      internalID: -4820688490734686681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_131
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 88
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0e336d52fcdc6560800000000000000
+      internalID: 7308459228822453770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_132
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 79
+        width: 90
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7c186db25ff2fc20800000000000000
+      internalID: 3238931812862925949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_133
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 79
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87326d20739582890800000000000000
+      internalID: -7482632688070417544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_134
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 79
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eabe1e612b87ba820800000000000000
+      internalID: 2930568688818056110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_135
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 79
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6a3aab0c14f05b10800000000000000
+      internalID: 1968341438452873837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_136
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 79
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4643c4d9b91d429f0800000000000000
+      internalID: -494039592814758812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_137
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 79
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a18a56f65d311150800000000000000
+      internalID: 5841517635385852329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_138
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 79
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0761457e99b2b2e0800000000000000
+      internalID: -2111421185060149494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_139
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 79
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1117017b9cdbf770800000000000000
+      internalID: 8645746469842129179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_140
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 79
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 114a35591f3660380800000000000000
+      internalID: -9005400515637173231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_141
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 35
+        width: 16
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4562472eddde8230800000000000000
+      internalID: 3643093094800450895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_142
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 55
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38ffce04293b9bce0800000000000000
+      internalID: -1388881569331216509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_143
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 55
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43289e670057c8b0800000000000000
+      internalID: -5132045257514933429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_144
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 15
+        width: 121
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1f45be96af77ea70800000000000000
+      internalID: 8856187545851350815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_145
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28784608e65c8bcc0800000000000000
+      internalID: -3694986415866345598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_146
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 31
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 651b7a07612de5720800000000000000
+      internalID: 2836935809111142742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Touring_police_Car_Sprite_Sheet_147
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 31
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07e6ae5e81844f690800000000000000
+      internalID: -7569345801929200016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      NES_Touring_police_Car_Sprite_Sheet_0: -810936427086372642
+      NES_Touring_police_Car_Sprite_Sheet_1: -4179742726453530911
+      NES_Touring_police_Car_Sprite_Sheet_10: 6693441579161039281
+      NES_Touring_police_Car_Sprite_Sheet_100: 8241940760658989185
+      NES_Touring_police_Car_Sprite_Sheet_101: -8686706387514814699
+      NES_Touring_police_Car_Sprite_Sheet_102: 1119397425607453090
+      NES_Touring_police_Car_Sprite_Sheet_103: -8598132878081883407
+      NES_Touring_police_Car_Sprite_Sheet_104: -4787269316354642013
+      NES_Touring_police_Car_Sprite_Sheet_105: 7714388393718044169
+      NES_Touring_police_Car_Sprite_Sheet_106: 973822615185957945
+      NES_Touring_police_Car_Sprite_Sheet_107: 3539498583753375899
+      NES_Touring_police_Car_Sprite_Sheet_108: 2050563427563910549
+      NES_Touring_police_Car_Sprite_Sheet_109: -8633872973311527484
+      NES_Touring_police_Car_Sprite_Sheet_11: -210673552095459534
+      NES_Touring_police_Car_Sprite_Sheet_110: 8688031648511170051
+      NES_Touring_police_Car_Sprite_Sheet_111: -7008128507950171302
+      NES_Touring_police_Car_Sprite_Sheet_112: 637789143948482484
+      NES_Touring_police_Car_Sprite_Sheet_113: -5439321549671602673
+      NES_Touring_police_Car_Sprite_Sheet_114: -1747092447159601416
+      NES_Touring_police_Car_Sprite_Sheet_115: -3149787736972224575
+      NES_Touring_police_Car_Sprite_Sheet_116: 7645435614268029599
+      NES_Touring_police_Car_Sprite_Sheet_117: -1760880686391003411
+      NES_Touring_police_Car_Sprite_Sheet_118: -5547726841487934949
+      NES_Touring_police_Car_Sprite_Sheet_119: -1582477001461413031
+      NES_Touring_police_Car_Sprite_Sheet_12: 2620033681136821137
+      NES_Touring_police_Car_Sprite_Sheet_120: -5898706678976747658
+      NES_Touring_police_Car_Sprite_Sheet_121: 3341553943049929771
+      NES_Touring_police_Car_Sprite_Sheet_122: -4560229090589607958
+      NES_Touring_police_Car_Sprite_Sheet_123: 5948559605477966653
+      NES_Touring_police_Car_Sprite_Sheet_124: -1213192279158358540
+      NES_Touring_police_Car_Sprite_Sheet_125: 7629672361051503450
+      NES_Touring_police_Car_Sprite_Sheet_126: 320026151041642624
+      NES_Touring_police_Car_Sprite_Sheet_127: -1703903012270375015
+      NES_Touring_police_Car_Sprite_Sheet_128: -6981917774443763961
+      NES_Touring_police_Car_Sprite_Sheet_129: -4632071180195795783
+      NES_Touring_police_Car_Sprite_Sheet_13: 8256726870464251647
+      NES_Touring_police_Car_Sprite_Sheet_130: -4820688490734686681
+      NES_Touring_police_Car_Sprite_Sheet_131: 7308459228822453770
+      NES_Touring_police_Car_Sprite_Sheet_132: 3238931812862925949
+      NES_Touring_police_Car_Sprite_Sheet_133: -7482632688070417544
+      NES_Touring_police_Car_Sprite_Sheet_134: 2930568688818056110
+      NES_Touring_police_Car_Sprite_Sheet_135: 1968341438452873837
+      NES_Touring_police_Car_Sprite_Sheet_136: -494039592814758812
+      NES_Touring_police_Car_Sprite_Sheet_137: 5841517635385852329
+      NES_Touring_police_Car_Sprite_Sheet_138: -2111421185060149494
+      NES_Touring_police_Car_Sprite_Sheet_139: 8645746469842129179
+      NES_Touring_police_Car_Sprite_Sheet_14: -4633708615769464251
+      NES_Touring_police_Car_Sprite_Sheet_140: -9005400515637173231
+      NES_Touring_police_Car_Sprite_Sheet_141: 3643093094800450895
+      NES_Touring_police_Car_Sprite_Sheet_142: -1388881569331216509
+      NES_Touring_police_Car_Sprite_Sheet_143: -5132045257514933429
+      NES_Touring_police_Car_Sprite_Sheet_144: 8856187545851350815
+      NES_Touring_police_Car_Sprite_Sheet_145: -3694986415866345598
+      NES_Touring_police_Car_Sprite_Sheet_146: 2836935809111142742
+      NES_Touring_police_Car_Sprite_Sheet_147: -7569345801929200016
+      NES_Touring_police_Car_Sprite_Sheet_15: -1999442644148385578
+      NES_Touring_police_Car_Sprite_Sheet_16: 1645027651957335000
+      NES_Touring_police_Car_Sprite_Sheet_17: 9222602648196393838
+      NES_Touring_police_Car_Sprite_Sheet_18: 1250910359783352035
+      NES_Touring_police_Car_Sprite_Sheet_19: 4555613082594536754
+      NES_Touring_police_Car_Sprite_Sheet_2: -1130341520099525281
+      NES_Touring_police_Car_Sprite_Sheet_20: 2211438210281019350
+      NES_Touring_police_Car_Sprite_Sheet_21: 5559727550947912767
+      NES_Touring_police_Car_Sprite_Sheet_22: -1954899935158613350
+      NES_Touring_police_Car_Sprite_Sheet_23: -7565035602032025310
+      NES_Touring_police_Car_Sprite_Sheet_24: 2384276249296173987
+      NES_Touring_police_Car_Sprite_Sheet_25: -1966868043060757547
+      NES_Touring_police_Car_Sprite_Sheet_26: -3442754493992692297
+      NES_Touring_police_Car_Sprite_Sheet_27: 6910333427518825151
+      NES_Touring_police_Car_Sprite_Sheet_28: 2368247330294824468
+      NES_Touring_police_Car_Sprite_Sheet_29: -6886485928651595141
+      NES_Touring_police_Car_Sprite_Sheet_3: -5322189487479244632
+      NES_Touring_police_Car_Sprite_Sheet_30: 1027000196829757137
+      NES_Touring_police_Car_Sprite_Sheet_31: 8849320633390566178
+      NES_Touring_police_Car_Sprite_Sheet_32: -6238930793454807764
+      NES_Touring_police_Car_Sprite_Sheet_33: -8581938852727792546
+      NES_Touring_police_Car_Sprite_Sheet_34: 5914323491630498899
+      NES_Touring_police_Car_Sprite_Sheet_35: 5180146070133569239
+      NES_Touring_police_Car_Sprite_Sheet_36: -1369022983879503346
+      NES_Touring_police_Car_Sprite_Sheet_37: 1995682920522633168
+      NES_Touring_police_Car_Sprite_Sheet_38: -3506985065759055854
+      NES_Touring_police_Car_Sprite_Sheet_39: -512304832097793574
+      NES_Touring_police_Car_Sprite_Sheet_4: -77076808162638914
+      NES_Touring_police_Car_Sprite_Sheet_40: 4103422720180637489
+      NES_Touring_police_Car_Sprite_Sheet_41: -3979409032562978856
+      NES_Touring_police_Car_Sprite_Sheet_42: -331364508668278187
+      NES_Touring_police_Car_Sprite_Sheet_43: -7936400795772412449
+      NES_Touring_police_Car_Sprite_Sheet_44: -9080435754276218875
+      NES_Touring_police_Car_Sprite_Sheet_45: 4127286871851819866
+      NES_Touring_police_Car_Sprite_Sheet_46: -5518477141877921037
+      NES_Touring_police_Car_Sprite_Sheet_47: -5592826845754670516
+      NES_Touring_police_Car_Sprite_Sheet_48: -2621597448996909945
+      NES_Touring_police_Car_Sprite_Sheet_49: -6632778785263348584
+      NES_Touring_police_Car_Sprite_Sheet_5: 1009666380084594691
+      NES_Touring_police_Car_Sprite_Sheet_50: 5535974896143609237
+      NES_Touring_police_Car_Sprite_Sheet_51: 7780627890090684559
+      NES_Touring_police_Car_Sprite_Sheet_52: -3803191090562240567
+      NES_Touring_police_Car_Sprite_Sheet_53: 3475966688224332057
+      NES_Touring_police_Car_Sprite_Sheet_54: 1118954970087494797
+      NES_Touring_police_Car_Sprite_Sheet_55: -2067667105612997015
+      NES_Touring_police_Car_Sprite_Sheet_56: -7077430457602886413
+      NES_Touring_police_Car_Sprite_Sheet_57: 3442408707789009666
+      NES_Touring_police_Car_Sprite_Sheet_58: 5289461742179234653
+      NES_Touring_police_Car_Sprite_Sheet_59: -1105509951837483985
+      NES_Touring_police_Car_Sprite_Sheet_6: 8496986797178030369
+      NES_Touring_police_Car_Sprite_Sheet_60: 2329569609432707249
+      NES_Touring_police_Car_Sprite_Sheet_61: 8456060492782458983
+      NES_Touring_police_Car_Sprite_Sheet_62: 3549227188216104313
+      NES_Touring_police_Car_Sprite_Sheet_63: -2841994209935683711
+      NES_Touring_police_Car_Sprite_Sheet_64: -5524860928272965505
+      NES_Touring_police_Car_Sprite_Sheet_65: 4881916109775004410
+      NES_Touring_police_Car_Sprite_Sheet_66: 2224921282834836578
+      NES_Touring_police_Car_Sprite_Sheet_67: -4849859693792942504
+      NES_Touring_police_Car_Sprite_Sheet_68: 6147313140022390779
+      NES_Touring_police_Car_Sprite_Sheet_69: 563391721719478534
+      NES_Touring_police_Car_Sprite_Sheet_7: -6283005442069737474
+      NES_Touring_police_Car_Sprite_Sheet_70: 7266584918944482497
+      NES_Touring_police_Car_Sprite_Sheet_71: -2888260317175315344
+      NES_Touring_police_Car_Sprite_Sheet_72: -7653336878388384601
+      NES_Touring_police_Car_Sprite_Sheet_73: -3301316062956252829
+      NES_Touring_police_Car_Sprite_Sheet_74: -6282770151013645924
+      NES_Touring_police_Car_Sprite_Sheet_75: 8735270194384443745
+      NES_Touring_police_Car_Sprite_Sheet_76: 1776688766211135460
+      NES_Touring_police_Car_Sprite_Sheet_77: -3075859216402613732
+      NES_Touring_police_Car_Sprite_Sheet_78: 3731587815560457863
+      NES_Touring_police_Car_Sprite_Sheet_79: -3413581166495383418
+      NES_Touring_police_Car_Sprite_Sheet_8: -4103565980279193911
+      NES_Touring_police_Car_Sprite_Sheet_80: 111177488040686810
+      NES_Touring_police_Car_Sprite_Sheet_81: 5508449066076394340
+      NES_Touring_police_Car_Sprite_Sheet_82: 4725216255088616894
+      NES_Touring_police_Car_Sprite_Sheet_83: -3295735466063476841
+      NES_Touring_police_Car_Sprite_Sheet_84: -1525947808213060497
+      NES_Touring_police_Car_Sprite_Sheet_85: -3217207163008329747
+      NES_Touring_police_Car_Sprite_Sheet_86: -8871699932540920408
+      NES_Touring_police_Car_Sprite_Sheet_87: 4994603095478999181
+      NES_Touring_police_Car_Sprite_Sheet_88: 4328965182329526289
+      NES_Touring_police_Car_Sprite_Sheet_89: 5777933905962348435
+      NES_Touring_police_Car_Sprite_Sheet_9: -5003245918892629918
+      NES_Touring_police_Car_Sprite_Sheet_90: -4445048866704709414
+      NES_Touring_police_Car_Sprite_Sheet_91: 2581018981629656735
+      NES_Touring_police_Car_Sprite_Sheet_92: -2146235399868764578
+      NES_Touring_police_Car_Sprite_Sheet_93: -2981243184006287934
+      NES_Touring_police_Car_Sprite_Sheet_94: -1949465567900677117
+      NES_Touring_police_Car_Sprite_Sheet_95: -4432742751707951776
+      NES_Touring_police_Car_Sprite_Sheet_96: -8411665548029290307
+      NES_Touring_police_Car_Sprite_Sheet_97: -161687548527191323
+      NES_Touring_police_Car_Sprite_Sheet_98: 5099250363097894792
+      NES_Touring_police_Car_Sprite_Sheet_99: 3901635903756102782
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
