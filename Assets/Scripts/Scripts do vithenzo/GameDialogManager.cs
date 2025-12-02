@@ -2,34 +2,33 @@ using UnityEngine;
 
 public class GameDialogManager : MonoBehaviour
 {
+    public DialogoSistema velhinha;
+    public RadioInteract radioInteract;
+    public PortaInteract portaInteract;
     public DialogoSistema dialogueSistema;
-    public RadioNoite radioNoite;
 
     void Start()
     {
-        if (GameStats.mostrarRadio)
-        {
-            MostrarRadio();
-        }
-        else
-        {
-            MostrarDialogoNormal();
-        }
-    }
-
-    public void MostrarRadio()
-    {
-        dialogueSistema.gameObject.SetActive(false);
-        radioNoite.gameObject.SetActive(true);
-        radioNoite.TocarMensagem();
-    }
-
-    public void MostrarDialogoNormal()
-    {
-        radioNoite.gameObject.SetActive(false);
-        dialogueSistema.gameObject.SetActive(true);
         dialogueSistema.IniciarDialogo();
+
+        // Começa SEM interação com radio e porta
+        radioInteract.gameObject.SetActive(false);
+        portaInteract.gameObject.SetActive(false);
+
+        // Inicia diálogo da velhinha
+        velhinha.mudaCenaAoTerminar = false;
+        velhinha.onDialogoAcabar = MostrarInteracaoRadio;
+
+        velhinha.IniciarDialogo();
+    }
+
+    void MostrarInteracaoRadio()
+    {
+        radioInteract.gameObject.SetActive(true);
+    }
+
+    public void MostrarInteracaoPorta()
+    {
+        portaInteract.gameObject.SetActive(true);
     }
 }
-
-
