@@ -30,7 +30,6 @@ public class RadioNoite : MonoBehaviour
 
         GameStats.mostrarRadio = false;
         Debug.Log("[RadioNoite] Radio terminou. Relatório: " + GameStats.relatorioUltimaNoite);
-        manager.MostrarDialogoNormal();
     }
 
 

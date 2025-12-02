@@ -1,7 +1,8 @@
 ﻿using TMPro;
 using UnityEngine;
-using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using System.Collections;
 
 public class ScriptChoice : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class ScriptChoice : MonoBehaviour
     public float typingSpeed = 0.02f;
 
     [Header("UI")]
-    public GameObject botaoPerguntar;
+    public GameObject botaoPerguntar;   // GameObject do botão (com componente Button)
     public GameObject botaoEnvenenar;
     public GameObject botaoDeixarIr;
     public GameObject painelDialogo;
@@ -28,8 +29,35 @@ public class ScriptChoice : MonoBehaviour
     private Coroutine typingCoroutine;
     private bool npcEhImpostor;
 
+    // referênca ao componente Button para manipular via código
+    private Button btnPerguntar;
+
     IEnumerator Start()
     {
+        // proteção contra referências faltando
+        if (botaoPerguntar == null) Debug.LogWarning("[ScriptChoice] botaoPerguntar não atribuído!");
+        if (dialogueText == null) Debug.LogWarning("[ScriptChoice] dialogueText não atribuído!");
+        if (nomeText == null) Debug.LogWarning("[ScriptChoice] nomeText não atribuído!");
+        if (painelDialogo == null) Debug.LogWarning("[ScriptChoice] painelDialogo não atribuído!");
+
+        // pega componente Button (se existir)
+        if (botaoPerguntar != null)
+            btnPerguntar = botaoPerguntar.GetComponent<Button>();
+
+        // Se o botão existir, remove listeners antigos (se houver) e adiciona por código
+        if (btnPerguntar != null)
+        {
+            btnPerguntar.onClick.RemoveAllListeners();
+            btnPerguntar.onClick.AddListener(() => {
+                Debug.Log("[ScriptChoice] Clique no botão Perguntar detectado.");
+                Perguntar();
+            });
+            btnPerguntar.interactable = false; // inicialmente desligado até terminar a fala
+        }
+        else
+        {
+            Debug.LogWarning("[ScriptChoice] componente Button não encontrado no objeto botaoPerguntar.");
+        }
 
         // Espera 1 frame até o NPCSpawner atualizar GameStats.currentNPCIsImpostor
         yield return null;
@@ -41,21 +69,25 @@ public class ScriptChoice : MonoBehaviour
         else
             Debug.Log("NPC Inocente (ROOM SCENE).");
 
-        botaoEnvenenar.SetActive(false);
-        botaoDeixarIr.SetActive(false);
-        botaoPerguntar.SetActive(true);
+        if (botaoEnvenenar != null) botaoEnvenenar.SetActive(false);
+        if (botaoDeixarIr != null) botaoDeixarIr.SetActive(false);
+        if (botaoPerguntar != null) botaoPerguntar.SetActive(true);
 
-        painelDialogo.SetActive(true);
-        dialogueText.text = "";
-        nomeText.text = "";
+        if (painelDialogo != null) painelDialogo.SetActive(true);
+        if (dialogueText != null) dialogueText.text = "";
+        if (nomeText != null) nomeText.text = "";
 
         IniciarDialogoAutomatico();
     }
 
-
-
     void IniciarDialogoAutomatico()
     {
+        if (dialogues == null || dialogues.Length == 0)
+        {
+            Debug.LogWarning("[ScriptChoice] dialogues vazio!");
+            return;
+        }
+
         dialogueDataAtual = dialogues[0];
         perguntasFeitas = 1;
         linhaAtual = 0;
@@ -66,10 +98,27 @@ public class ScriptChoice : MonoBehaviour
 
     public void Perguntar()
     {
-        if (isTyping) return;
-        if (!terminouDialogo) return;
-        if (perguntasFeitas >= maxPerguntas) return;
+        Debug.Log($"[ScriptChoice] Perguntar() chamado. terminouDialogo={terminouDialogo}, perguntasFeitas={perguntasFeitas}, max={maxPerguntas}");
 
+        if (isTyping)
+        {
+            Debug.Log("[ScriptChoice] Ainda digitando, ignorando Perguntar()");
+            return;
+        }
+
+        if (!terminouDialogo)
+        {
+            Debug.Log("[ScriptChoice] diálogo ainda não terminado (terminouDialogo=false)");
+            return;
+        }
+
+        if (perguntasFeitas >= maxPerguntas)
+        {
+            Debug.Log("[ScriptChoice] já atingiu maxPerguntas");
+            return;
+        }
+
+        // troca o dialogueData e reinicia
         dialogueDataAtual = dialogues[perguntasFeitas];
         perguntasFeitas++;
         linhaAtual = 0;
@@ -83,9 +132,9 @@ public class ScriptChoice : MonoBehaviour
 
     void MostrarOpcoesFinais()
     {
-        botaoPerguntar.SetActive(false);
-        botaoEnvenenar.SetActive(true);
-        botaoDeixarIr.SetActive(true);
+        if (botaoPerguntar != null) botaoPerguntar.SetActive(false);
+        if (botaoEnvenenar != null) botaoEnvenenar.SetActive(true);
+        if (botaoDeixarIr != null) botaoDeixarIr.SetActive(true);
     }
 
     void Update()
@@ -102,9 +151,19 @@ public class ScriptChoice : MonoBehaviour
 
         if (isTyping)
         {
-            StopCoroutine(typingCoroutine);
+            // pára a corrotina atual e mostra a linha completa
+            if (typingCoroutine != null)
+                StopCoroutine(typingCoroutine);
+
             dialogueText.text = dialogueDataAtual.falas[linhaAtual].texto;
             isTyping = false;
+
+            // se a fala exibida for a última do diálogo, marcar terminouDialogo
+            if (linhaAtual == dialogueDataAtual.falas.Count - 1)
+            {
+                terminouDialogo = true;
+                if (btnPerguntar != null) btnPerguntar.interactable = true;
+            }
             return;
         }
 
@@ -116,9 +175,13 @@ public class ScriptChoice : MonoBehaviour
         }
         else
         {
+            // quando o diálogo termina (todas as linhas), permitimos perguntar
             terminouDialogo = true;
-            dialogueText.text = "";
-            nomeText.text = "";
+            if (dialogueText != null) dialogueText.text = "";
+            if (nomeText != null) nomeText.text = "";
+            if (btnPerguntar != null) btnPerguntar.interactable = true;
+
+            Debug.Log("[ScriptChoice] Diálogo terminou - terminouDialogo = true");
         }
     }
 
@@ -135,18 +198,20 @@ public class ScriptChoice : MonoBehaviour
         return texto.Replace("t", "T");
     }
 
-
     void MostrarFalaAtual()
     {
+        if (dialogueDataAtual == null) return;
         if (linhaAtual >= dialogueDataAtual.falas.Count) return;
 
         var fala = dialogueDataAtual.falas[linhaAtual];
-
-        // troca aqui!
         string texto = AplicarFiltroImpostor(fala.texto);
 
-        nomeText.text = fala.nomePersonagem;
-        dialogueText.text = "";
+        if (nomeText != null) nomeText.text = fala.nomePersonagem;
+        if (dialogueText != null) dialogueText.text = "";
+
+        // sempre que começar uma fala nova, não está terminado
+        terminouDialogo = false;
+        if (btnPerguntar != null) btnPerguntar.interactable = false;
 
         if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
@@ -154,19 +219,26 @@ public class ScriptChoice : MonoBehaviour
         typingCoroutine = StartCoroutine(TypeLine(texto));
     }
 
-
     IEnumerator TypeLine(string line)
     {
         isTyping = true;
-        dialogueText.text = "";
+        if (dialogueText != null) dialogueText.text = "";
 
         foreach (char c in line)
         {
-            dialogueText.text += c;
+            if (dialogueText != null) dialogueText.text += c;
             yield return new WaitForSeconds(typingSpeed);
         }
 
         isTyping = false;
+
+        // se esta fala é a última do dialogueDataAtual, marcamos que terminou o diálogo
+        if (dialogueDataAtual != null && linhaAtual == dialogueDataAtual.falas.Count - 1)
+        {
+            terminouDialogo = true;
+            Debug.Log("[ScriptChoice] última fala exibida -> terminouDialogo = true");
+            if (btnPerguntar != null) btnPerguntar.interactable = true;
+        }
     }
 
     public void EscolherEnvenenar()
@@ -174,7 +246,7 @@ public class ScriptChoice : MonoBehaviour
         PararDialogo();
         OcultarBotoesFinais();
 
-        painelDialogo.SetActive(true);
+        if (painelDialogo != null) painelDialogo.SetActive(true);
 
         if (GameStats.currentNPCIsImpostor)
         {
@@ -187,12 +259,12 @@ public class ScriptChoice : MonoBehaviour
             GameStats.relatorioUltimaNoite = $"{GameStats.totalInocentesMortos} humanos foram mortos esta noite.";
         }
 
-        // preparar radio para próxima ida ao Game
         GameStats.mostrarRadio = true;
-        GameStats.shouldGoToRoomAfterDialog = true; // manter fluxo caso queira novos encontros
+        GameStats.shouldGoToRoomAfterDialog = true;
         VerificarFimDeJogo();
 
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Victoria");
+        Time.timeScale = 1.0f;
     }
 
     public void EscolherDeixarIr()
@@ -200,11 +272,11 @@ public class ScriptChoice : MonoBehaviour
         PararDialogo();
         OcultarBotoesFinais();
 
-        painelDialogo.SetActive(true);
+        if (painelDialogo != null) painelDialogo.SetActive(true);
 
         if (GameStats.currentNPCIsImpostor)
         {
-            GameStats.totalInocentesMortos++; // impostor que ficou pode matar inocentes: contamos como vítimas
+            GameStats.totalInocentesMortos++;
             GameStats.relatorioUltimaNoite = $"{GameStats.totalInocentesMortos} pessoas foram mortas naquela noite.";
         }
         else
@@ -216,36 +288,33 @@ public class ScriptChoice : MonoBehaviour
         GameStats.shouldGoToRoomAfterDialog = true;
         VerificarFimDeJogo();
 
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Victoria");
+        Time.timeScale = 1.0f;
     }
 
     private void VerificarFimDeJogo()
     {
-        // Vitória: 10 impostores mortos
-        if (GameStats.totalImpostoresMortos >= 10)
+        if (GameStats.totalImpostoresMortos >= 5)
         {
-            Debug.Log("[Game] Jogador venceu! 10 impostores mortos.");
-            SceneManager.LoadScene("VictoryScene"); // crie essa cena
+            Debug.Log("[Game] Jogador venceu! 5 impostores mortos.");
+            SceneManager.LoadScene("VictoryScene");
             return;
         }
 
-        // Derrota: 5 inocentes mortos
         if (GameStats.totalInocentesMortos >= 5)
         {
             Debug.Log("[Game] Jogador perdeu! 5 inocentes mortos.");
-            SceneManager.LoadScene("GameOverScene"); // crie essa cena
+            SceneManager.LoadScene("GameOverScene");
             return;
         }
     }
 
-
     void OcultarBotoesFinais()
     {
-        botaoPerguntar.SetActive(false);
-        botaoEnvenenar.SetActive(false);
-        botaoDeixarIr.SetActive(false);
+        if (botaoPerguntar != null) botaoPerguntar.SetActive(false);
+        if (botaoEnvenenar != null) botaoEnvenenar.SetActive(false);
+        if (botaoDeixarIr != null) botaoDeixarIr.SetActive(false);
     }
-
 
     public void PararDialogo()
     {
@@ -253,7 +322,4 @@ public class ScriptChoice : MonoBehaviour
         isTyping = false;
         this.enabled = false;
     }
-
-
 }
-

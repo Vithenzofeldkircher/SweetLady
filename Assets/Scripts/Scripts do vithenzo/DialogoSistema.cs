@@ -2,14 +2,19 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using System;
 
 public class DialogoSistema : MonoBehaviour
 {
+    public Action onDialogoAcabar;
+
+
     [Header("Referências")]
     public DialogueData dialogueData;
     public TMP_Text dialogueText;
     public TMP_Text nomeText;
     public float typingSpeed = 0.03f;
+
 
     [Header("Configurações")]
     public bool mudaCenaAoTerminar = false;
@@ -136,6 +141,8 @@ public class DialogoSistema : MonoBehaviour
             GameStats.shouldGoToRoomAfterDialog = false;
             SceneManager.LoadScene("RoomScene"); // ajuste o nome se necessário
         }
+
+        onDialogoAcabar?.Invoke();
     }
 
 
