@@ -8,34 +8,25 @@ public class DialogoSistema : MonoBehaviour
 {
     public Action onDialogoAcabar;
 
-
     [Header("Referências")]
     public DialogueData dialogueData;
     public TMP_Text dialogueText;
     public TMP_Text nomeText;
     public float typingSpeed = 0.03f;
 
-
     [Header("Configurações")]
-    public bool mudaCenaAoTerminar = false;
-    public string nextSceneName = "";
+    public bool mudarCenaAoTerminar = false;
+    public string proximaCena = "";
 
     private int currentLine = 0;
     private bool isTyping = false;
     private bool dialogoAtivo = false;
-    private bool aguardandoTrocaCena = false;
-
-    void Start()
-    {
-        // Se quiser iniciar automaticamente, mantenha:
-        //if (dialogueData != null)
-            //IniciarDialogo();
-    }
+    private bool aguardandoTeclaTroca = false;
 
     void Update()
     {
-        // Se está aguardando tecla F para trocar de cena
-        if (aguardandoTrocaCena)
+        // Aguarda F para trocar de cena (se ativado)
+        if (aguardandoTeclaTroca)
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
@@ -44,10 +35,9 @@ public class DialogoSistema : MonoBehaviour
             return;
         }
 
-        if (!dialogoAtivo)
-            return;
+        if (!dialogoAtivo) return;
 
-        // Avançar fala com Enter
+        // Avançar com Enter
         if (Input.GetKeyDown(KeyCode.Return))
         {
             if (isTyping)
@@ -55,55 +45,53 @@ public class DialogoSistema : MonoBehaviour
                 StopAllCoroutines();
                 dialogueText.text = dialogueData.falas[currentLine].texto;
                 isTyping = false;
+                return;
             }
+
+            currentLine++;
+
+            if (currentLine < dialogueData.falas.Count)
+                MostrarFalaAtual();
             else
-            {
-                currentLine++;
-                if (currentLine < dialogueData.falas.Count)
-                {
-                    MostrarFalaAtual();
-                }
-                else
-                {
-                    EncerrarDialogo();
-                }
-            }
+                EncerrarDialogo();
         }
     }
 
-    public void IniciarDialogo()
+    // Chamar este método para iniciar o diálogo
+    public void IniciarDialogo(GameDialogManager dialogoInicial)
     {
         if (dialogueData == null || dialogueData.falas.Count == 0)
         {
-            Debug.LogWarning("[DialogoSistema] DialogueData vazio ao iniciar!");
+            Debug.LogWarning("[DialogoSistema] DialogueData vazio.");
             return;
         }
 
         currentLine = 0;
         dialogoAtivo = true;
-        aguardandoTrocaCena = false;
-        gameObject.SetActive(true);
+        aguardandoTeclaTroca = false;
 
-        MostrarFalaAtual(); // mostra imediatamente
+        gameObject.SetActive(true);
+        MostrarFalaAtual();
     }
 
     private void MostrarFalaAtual()
     {
-        if (dialogueData == null || currentLine < 0 || currentLine >= dialogueData.falas.Count)
+        if (currentLine < 0 || currentLine >= dialogueData.falas.Count)
             return;
 
-        var falaAtual = dialogueData.falas[currentLine];
-        nomeText.text = falaAtual.nomePersonagem;
+        var fala = dialogueData.falas[currentLine];
 
-        // Processa o texto caso o NPC atual seja impostor
-        bool npcIsImpostor = GameStats.currentNPCIsImpostor;
-        string processed = TextProcessor.ProcessForImpostor(npcIsImpostor, falaAtual.texto);
+        nomeText.text = fala.nomePersonagem;
+
+        // Filtro caso o NPC seja impostor (apenas na RoomScene)
+        bool impostor = GameStats.currentNPCIsImpostor;
+        string textoProcessado = TextProcessor.ProcessForImpostor(impostor, fala.texto);
 
         StopAllCoroutines();
-        StartCoroutine(TypeLine(processed));
+        StartCoroutine(TypeLine(textoProcessado));
     }
 
-    private IEnumerator TypeLine(string line)
+    IEnumerator TypeLine(string line)
     {
         isTyping = true;
         dialogueText.text = "";
@@ -117,15 +105,16 @@ public class DialogoSistema : MonoBehaviour
         isTyping = false;
     }
 
-
     private void EncerrarDialogo()
     {
-        Debug.Log("[DialogoSistema] Fim do diálogo.");
         dialogoAtivo = false;
 
-        if (mudaCenaAoTerminar)
+        Debug.Log("[DialogoSistema] Fim do diálogo.");
+
+        // Se configurar mudança de cena
+        if (mudarCenaAoTerminar)
         {
-            aguardandoTrocaCena = true;
+            aguardandoTeclaTroca = true;
             dialogueText.text = "<i>Pressione F para continuar...</i>";
             nomeText.text = "";
         }
@@ -134,51 +123,36 @@ public class DialogoSistema : MonoBehaviour
             gameObject.SetActive(false);
         }
 
-        
-        if (GameStats.shouldGoToRoomAfterDialog)
-        {
-            // desativa para não repetir
-            GameStats.shouldGoToRoomAfterDialog = false;
-            SceneManager.LoadScene("RoomScene"); // ajuste o nome se necessário
-        }
-
-        onDialogoAcabar?.Invoke();
+        onDialogoAcabar?.Invoke(); // dispara evento para o rádio
     }
-
 
     private void TrocarCena()
     {
-        if (!string.IsNullOrEmpty(nextSceneName))
+        if (!string.IsNullOrEmpty(proximaCena))
         {
-            Debug.Log($"[DialogoSistema] Trocando para cena: {nextSceneName}");
-            SceneManager.LoadScene(nextSceneName);
+            Debug.Log($"Trocando cena para: {proximaCena}");
+            SceneManager.LoadScene(proximaCena);
         }
         else
         {
-            Debug.LogWarning("[DialogoSistema] Nome da próxima cena não definido!");
+            Debug.LogWarning("[DialogoSistema] próximaCena não definida!");
         }
+    }
+
+    internal void IniciarDialogo()
+    {
+        throw new NotImplementedException();
     }
 
     public static class TextProcessor
     {
         public static string ProcessForImpostor(bool isImpostor, string input)
         {
-            // Só aplica na RoomScene
-            if (SceneManager.GetActiveScene().name != "RoomScene")
-                return input;
+            if (SceneManager.GetActiveScene().name != "RoomScene") return input;
+            if (!isImpostor || string.IsNullOrEmpty(input)) return input;
 
-            if (!isImpostor || string.IsNullOrEmpty(input))
-                return input;
-
-            char[] arr = input.ToCharArray();
-            for (int i = 0; i < arr.Length; i++)
-            {
-                if (arr[i] == 't')
-                    arr[i] = 'T';
-            }
-
-            return new string(arr);
+            return input.Replace('t', 'T');
         }
     }
-
 }
+

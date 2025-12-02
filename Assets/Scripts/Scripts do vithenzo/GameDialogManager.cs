@@ -3,32 +3,35 @@ using UnityEngine;
 public class GameDialogManager : MonoBehaviour
 {
     public DialogoSistema velhinha;
-    public RadioInteract radioInteract;
-    public PortaInteract portaInteract;
-    public DialogoSistema dialogueSistema;
+    public RadioInteract radioInteract;  // Script para interação com radio (E)
+    public PortaInteracao portaInteract;  // Script para interação com porta (E)
 
     void Start()
     {
-        dialogueSistema.IniciarDialogo();
-
-        // Começa SEM interação com radio e porta
+        // Começa SEM interação com rádio e porta
         radioInteract.gameObject.SetActive(false);
         portaInteract.gameObject.SetActive(false);
 
-        // Inicia diálogo da velhinha
-        velhinha.mudaCenaAoTerminar = false;
-        velhinha.onDialogoAcabar = MostrarInteracaoRadio;
+        // Configura diálogo da velhinha
+        velhinha.mudarCenaAoTerminar = false; // NÃO muda de cena automaticamente
+        velhinha.onDialogoAcabar = AtivarRadio;
 
+        // Inicia diálogo da velhinha
         velhinha.IniciarDialogo();
     }
 
-    void MostrarInteracaoRadio()
+    void AtivarRadio()
     {
+        // Ativa o objeto do rádio para que o jogador possa interagir
         radioInteract.gameObject.SetActive(true);
+
+        // Passa referência para que, ao terminar o rádio, a porta seja ativada
+        radioInteract.onRadioAcabar = AtivarPorta;
     }
 
-    public void MostrarInteracaoPorta()
+    void AtivarPorta()
     {
+        // Ativa a porta após o rádio
         portaInteract.gameObject.SetActive(true);
     }
 }

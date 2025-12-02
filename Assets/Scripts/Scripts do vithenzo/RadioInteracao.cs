@@ -3,6 +3,8 @@ using UnityEngine;
 public class RadioInteracao : MonoBehaviour
 {
     public RadioNoite radioNoite;
+    public DialogoSistema dialogManager;  // Seu sistema de diálogo
+    public GameDialogManager dialogoInicial;    // Seu Dialogue Data para primeiro diálogo
     public float distanciaInteracao = 2f;
 
     Transform player;
@@ -20,12 +22,18 @@ public class RadioInteracao : MonoBehaviour
 
         float dist = Vector3.Distance(player.position, transform.position);
 
-        if (dist <= distanciaInteracao)
+        if (dist <= distanciaInteracao && Input.GetKeyDown(KeyCode.E))
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (!GameStats.jaFaleiComNPC)
             {
+                // Toca diálogo inicial
+                dialogManager.IniciarDialogo(dialogoInicial);
+            }
+            else
+            {
+                // Toca o rádio normalmente, depois do diálogo com NPC
                 radioNoite.gameObject.SetActive(true);
-                radioNoite.TocarMensagem();
+                StartCoroutine(radioNoite.RadioFlow());
             }
         }
     }

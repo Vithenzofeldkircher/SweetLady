@@ -15,12 +15,7 @@ public class RadioNoite : MonoBehaviour
         nomeRadio.text = "Rádio da Base";
     }
 
-    public void TocarMensagem()
-    {
-        StartCoroutine(RadioFlow());
-    }
-
-    IEnumerator RadioFlow()
+    public IEnumerator RadioFlow()  // <--- Tornou-se público
     {
         textoRadio.text = "";
 
@@ -31,7 +26,6 @@ public class RadioNoite : MonoBehaviour
         GameStats.mostrarRadio = false;
         Debug.Log("[RadioNoite] Radio terminou. Relatório: " + GameStats.relatorioUltimaNoite);
     }
-
 
     IEnumerator Escrever(string linha)
     {

@@ -1,18 +1,48 @@
 using UnityEngine;
-
+using System;
 public class RadioInteract : MonoBehaviour
 {
-    public RadioNoite radio;
-    public InteracaoPorTecla interacao;
+    public DialogoSistema dialogoSistema;  // componente para diálogos normais (DialogueData)
+    public DialogueData dialogoInicial;    // diálogo inicial do rádio
+    public RadioNoite radioNoite;           // componente para o relatório após decisão
 
-    void Start()
+    private bool playerPerto = false;
+
+    public Action onRadioAcabar;
+
+    void Update()
     {
-        interacao.onInteract = () =>
+        if (playerPerto && Input.GetKeyDown(KeyCode.E))
         {
-            radio.gameObject.SetActive(true);
-            radio.TocarMensagem();
-        };
+            if (!GameStats.radioDialogoInicialTocado)
+            {
+                // Toca diálogo inicial
+                dialogoSistema.dialogueData = dialogoInicial;
+                dialogoSistema.IniciarDialogo();
+                GameStats.radioDialogoInicialTocado = true;
+            }
+            else if (GameStats.radioRelatorioAtivo)
+            {
+                // Toca o relatório da noite
+                StartCoroutine(radioNoite.RadioFlow());
+                GameStats.radioRelatorioAtivo = false; // desativa pra não repetir
+            }
+            else
+            {
+                Debug.Log("Nada para tocar no rádio agora.");
+            }
+        }
+    }
 
-        radio.gameObject.SetActive(false);
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+            playerPerto = true;
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+            playerPerto = false;
     }
 }
