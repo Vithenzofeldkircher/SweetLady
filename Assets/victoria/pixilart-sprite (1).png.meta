@@ -108,10 +108,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -132,6 +132,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -139,12 +152,12 @@ TextureImporter:
       name: pixilart-sprite (1)_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 5
-        width: 48
-        height: 55
+        x: 8
+        y: 6
+        width: 46
+        height: 53
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -161,12 +174,12 @@ TextureImporter:
       name: pixilart-sprite (1)_1
       rect:
         serializedVersion: 2
-        x: 71
-        y: 4
-        width: 48
+        x: 65
+        y: 3
+        width: 53
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -183,12 +196,12 @@ TextureImporter:
       name: pixilart-sprite (1)_2
       rect:
         serializedVersion: 2
-        x: 135
-        y: 5
-        width: 48
-        height: 55
+        x: 130
+        y: 0
+        width: 52
+        height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -205,12 +218,12 @@ TextureImporter:
       name: pixilart-sprite (1)_3
       rect:
         serializedVersion: 2
-        x: 201
-        y: 4
-        width: 48
+        x: 202
+        y: 3
+        width: 46
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -227,12 +240,12 @@ TextureImporter:
       name: pixilart-sprite (1)_4
       rect:
         serializedVersion: 2
-        x: 265
-        y: 5
-        width: 48
-        height: 55
+        x: 266
+        y: 0
+        width: 46
+        height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -249,12 +262,12 @@ TextureImporter:
       name: pixilart-sprite (1)_5
       rect:
         serializedVersion: 2
-        x: 327
-        y: 5
-        width: 48
-        height: 55
+        x: 328
+        y: 6
+        width: 46
+        height: 53
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -272,11 +285,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 391
-        y: 4
-        width: 48
-        height: 56
+        y: 0
+        width: 47
+        height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -293,12 +306,12 @@ TextureImporter:
       name: pixilart-sprite (1)_7
       rect:
         serializedVersion: 2
-        x: 457
-        y: 5
-        width: 48
-        height: 55
+        x: 458
+        y: 6
+        width: 46
+        height: 53
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -315,12 +328,12 @@ TextureImporter:
       name: pixilart-sprite (1)_8
       rect:
         serializedVersion: 2
-        x: 521
-        y: 4
-        width: 48
-        height: 56
+        x: 522
+        y: 5
+        width: 46
+        height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -337,12 +350,12 @@ TextureImporter:
       name: pixilart-sprite (1)_9
       rect:
         serializedVersion: 2
-        x: 590
-        y: 1
-        width: 39
-        height: 57
+        x: 591
+        y: 2
+        width: 50
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -359,12 +372,12 @@ TextureImporter:
       name: pixilart-sprite (1)_10
       rect:
         serializedVersion: 2
-        x: 654
-        y: 0
-        width: 39
-        height: 58
+        x: 655
+        y: 1
+        width: 50
+        height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -381,12 +394,12 @@ TextureImporter:
       name: pixilart-sprite (1)_11
       rect:
         serializedVersion: 2
-        x: 718
-        y: 1
-        width: 39
-        height: 57
+        x: 719
+        y: 2
+        width: 50
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -403,12 +416,12 @@ TextureImporter:
       name: pixilart-sprite (1)_12
       rect:
         serializedVersion: 2
-        x: 782
-        y: 0
-        width: 39
-        height: 58
+        x: 783
+        y: 1
+        width: 37
+        height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -425,7 +438,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3830407eda0725e4e9798b8a9440d102
     internalID: 0
     vertices: []
     indices: 
@@ -433,7 +446,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       pixilart-sprite (1)_0: -2053989363645956680
       pixilart-sprite (1)_1: -996435834641883867

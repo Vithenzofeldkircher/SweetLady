@@ -3154,11 +3154,12 @@ GameObject:
   - component: {fileID: 631557479}
   - component: {fileID: 631557478}
   - component: {fileID: 631557480}
-  - component: {fileID: 631557481}
   - component: {fileID: 631557482}
   - component: {fileID: 631557483}
+  - component: {fileID: 631557484}
+  - component: {fileID: 631557485}
   m_Layer: 0
-  m_Name: pixilart-sprite (1)_0
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3216,7 +3217,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.48, y: 0.55}
+  m_Size: {x: 3, y: 3.4375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3247,10 +3248,10 @@ Animator:
   m_GameObject: {fileID: 631557477}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 355d6f6566c24c34aa380419c844cf9e, type: 2}
-  m_CullingMode: 0
+  m_Controller: {fileID: 9100000, guid: 7bb37ca224b4e6e4587b3814ad0be825, type: 2}
+  m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
@@ -3259,20 +3260,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &631557481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 631557477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1354f77399bacc45a6fe994e063b339, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::player
-  walkSpeed: 5
-  runSpeed: 9
 --- !u!50 &631557482
 Rigidbody2D:
   serializedVersion: 5
@@ -3338,14 +3325,41 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3, y: 3.4375}
-    newSize: {x: 0.48, y: 0.55}
+    oldSize: {x: 2.875, y: 3.3125}
+    newSize: {x: 3, y: 3.4375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Size: {x: 0.7378318, y: 0.53531075}
   m_EdgeRadius: 0
+--- !u!114 &631557484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631557477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5808f49b7cec52c4c9415d9428d737b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::update
+--- !u!114 &631557485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631557477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1354f77399bacc45a6fe994e063b339, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player
+  walkSpeed: 5
+  runSpeed: 9
+  speed: 2
 --- !u!1 &648239047
 GameObject:
   m_ObjectHideFlags: 0
@@ -4004,7 +4018,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 2
   m_Sprite: {fileID: 6164854706100804260, guid: 548c6a97127078346b826b9d6d25a9d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

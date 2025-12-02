@@ -2,20 +2,22 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
+
 public class Player : MonoBehaviour
 {
     [Header("Velocidades")]
     public float walkSpeed = 5f;
     public float runSpeed = 9f;
+    public float speed;
 
     Rigidbody2D rb;
-    Animator animator;
+    Animator anim;
     Vector3 originalScale;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
         originalScale = transform.localScale;
     }
 
@@ -27,22 +29,18 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
+        float h = Input.GetAxisRaw("Horizontal");
+        float v = Input.GetAxisRaw("Vertical");
 
-        float speed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
+        // Movimento
+        Vector3 moveDir = new Vector3(h, v, 0).normalized;
+        transform.Translate(moveDir * speed * Time.deltaTime);
 
-        // Movimento usando linearVelocity (novo)
-        rb.linearVelocity = new Vector2(horizontal * speed, vertical * speed);
+        // Envia valores para o Animator
+        anim.SetFloat("Horizontal", h);
+        anim.SetFloat("Vertical", v);
 
-        // Animação
-        if (animator != null)
-            animator.SetFloat("Speed", rb.linearVelocity.sqrMagnitude);
-
-        // Flip do sprite
-        if (horizontal > 0.01f)
-            transform.localScale = new Vector3(Mathf.Abs(originalScale.x), originalScale.y, originalScale.z);
-        else if (horizontal < -0.01f)
-            transform.localScale = new Vector3(-Mathf.Abs(originalScale.x), originalScale.y, originalScale.z);
+        // Idle quando não está movendo
+        anim.SetBool("IsMoving", moveDir.magnitude > 0.1f);
     }
 }
