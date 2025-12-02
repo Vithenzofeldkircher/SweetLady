@@ -75,25 +75,25 @@ public class DialogoSistema : MonoBehaviour
         dialogoAtivo = true;
         aguardandoTeclaTroca = false;
 
-        gameObject.SetActive(true);
-        MostrarFalaAtual();
+        gameObject.SetActive(true); // Apenas ativa o painel.
+
+        // REMOVA ESTA CHAMADA Deixe o script chamador fazer isso.
+        // MostrarFalaAtual(); 
     }
 
 
 
-    private void MostrarFalaAtual()
+    public void MostrarFalaAtual()
     {
         if (currentLine < 0 || currentLine >= dialogueData.falas.Count)
             return;
 
         var fala = dialogueData.falas[currentLine];
-
         nomeText.text = fala.nomePersonagem;
 
         // Filtro caso o NPC seja impostor (apenas na RoomScene)
         bool impostor = GameStats.currentNPCIsImpostor;
         string textoProcessado = TextProcessor.ProcessForImpostor(impostor, fala.texto);
-
         StopAllCoroutines();
         StartCoroutine(TypeLine(textoProcessado));
     }

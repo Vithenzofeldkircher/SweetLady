@@ -26,6 +26,12 @@ public class RadioNoite : MonoBehaviour
         GameStats.mostrarRadio = false;
         Debug.Log("[RadioNoite] Radio terminou. Relatório: " + GameStats.relatorioUltimaNoite);
     }
+    public void IniciarRadioFlow()
+    {
+        // Garante que o objeto está ativo antes de começar, se for o caso
+        // Se este objeto estava inativo e foi ativado agora, a Coroutine deve funcionar.
+        StartCoroutine(RadioFlow());
+    }
 
     IEnumerator Escrever(string linha)
     {

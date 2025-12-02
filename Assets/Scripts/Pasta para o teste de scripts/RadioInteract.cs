@@ -9,11 +9,10 @@ public class RadioInteract : MonoBehaviour
     public DialogueData dialogoInicialRadio;
 
     public RadioNoite radioNoite;
-    public GameObject portaObj;
 
     void Start()
     {
-        portaObj.SetActive(false);
+        
     }
 
     void Update()
@@ -33,20 +32,18 @@ public class RadioInteract : MonoBehaviour
             GameStats.radioDialogoInicialTocado = true;
 
             dialogoSistema.dialogueData = dialogoInicialRadio;
-            dialogoSistema.onDialogoAcabar = AtivarPorta;
             dialogoSistema.IniciarDialogo();
+
             return;
         }
 
-        // INTERAÇÕES APÓS ESCOLHA NA ROOMSCENE
+
+
         if (GameStats.mostrarRadio)
         {
-            StartCoroutine(radioNoite.RadioFlow());
+            // Chame o método que inicia a Coroutine internamente
+            radioNoite.IniciarRadioFlow();
+            return; // Certifique-se de sair para evitar interações duplicadas
         }
-    }
-
-    void AtivarPorta()
-    {
-        portaObj.SetActive(true);
     }
 }

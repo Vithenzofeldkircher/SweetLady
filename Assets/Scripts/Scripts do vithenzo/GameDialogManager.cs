@@ -17,12 +17,15 @@ public class GameDialogManager : MonoBehaviour
 
         // Configura diálogo da velhinha
         // Se já tocou o diálogo inicial antes, NÃO executar de novo
-        if (GameStats.dialogoInicialTocado)
+        if (!GameStats.dialogoInicialTocado)
         {
-            // Apenas ativa rádio e porta se necessário
-            radioInteract.gameObject.SetActive(true);
-            portaInteract.gameObject.SetActive(false); // depende da lógica
-            return;
+            GameStats.dialogoInicialTocado = true;
+
+            dialogoSistema.onDialogoAcabar = AtivarRadio;
+            dialogoSistema.dialogueData = dialogoInicial;
+
+            // Use a Coroutine para iniciar com delay
+            StartCoroutine(IniciarDialogoComAtraso());
         }
 
         // Primeira vez entrando na cena → toca diálogo inicial
