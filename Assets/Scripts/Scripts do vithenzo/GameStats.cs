@@ -6,7 +6,7 @@ public static class GameStats
     public static bool radioDialogoInicialTocado = false;
     public static bool radioRelatorioAtivo = false; // para controlar quando toca o relatório
     public static bool jaFaleiComNPC = false;  // Controla se jogador falou com NPC
-
+    public static bool dialogoInicialTocado = false;
     // Radio / diálogo
     public static bool mostrarRadio = false;
     public static string relatorioUltimaNoite = "";

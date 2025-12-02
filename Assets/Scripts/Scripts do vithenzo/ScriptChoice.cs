@@ -294,17 +294,17 @@ public class ScriptChoice : MonoBehaviour
 
     private void VerificarFimDeJogo()
     {
-        if (GameStats.totalImpostoresMortos >= 5)
+        if (GameStats.totalImpostoresMortos >= 1)
         {
             Debug.Log("[Game] Jogador venceu! 5 impostores mortos.");
-            SceneManager.LoadScene("VictoryScene");
+            SceneManager.LoadScene("vitoria");
             return;
         }
 
-        if (GameStats.totalInocentesMortos >= 5)
+        if (GameStats.totalInocentesMortos >= 1)
         {
             Debug.Log("[Game] Jogador perdeu! 5 inocentes mortos.");
-            SceneManager.LoadScene("GameOverScene");
+            SceneManager.LoadScene("derrota");
             return;
         }
     }

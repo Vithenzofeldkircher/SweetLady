@@ -1,37 +1,51 @@
-using UnityEngine;
+Ôªøusing UnityEngine;
 
 public class GameDialogManager : MonoBehaviour
 {
     public DialogoSistema velhinha;
-    public RadioInteract radioInteract;  // Script para interaÁ„o com radio (E)
-    public PortaInteracao portaInteract;  // Script para interaÁ„o com porta (E)
+    public RadioInteract radioInteract;  // Script para intera√ß√£o com radio (E)
+    public PortaInteracao portaInteract;  // Script para intera√ß√£o com porta (E)
+    public DialogueData velhinhaDialogueData;
+    public DialogueData radioIntroData;
 
     void Start()
     {
-        // ComeÁa SEM interaÁ„o com r·dio e porta
-        radioInteract.gameObject.SetActive(false);
-        portaInteract.gameObject.SetActive(false);
+        // Come√ßa SEM intera√ß√£o com r√°dio e porta
+        //radioInteract.gameObject.SetActive(false);
+        //portaInteract.gameObject.SetActive(false);
 
-        // Configura di·logo da velhinha
-        velhinha.mudarCenaAoTerminar = false; // N√O muda de cena automaticamente
+        // Configura di√°logo da velhinha
+        // Se j√° tocou o di√°logo inicial antes, N√ÉO executar de novo
+        if (GameStats.dialogoInicialTocado)
+        {
+            // Apenas ativa r√°dio e porta se necess√°rio
+            radioInteract.gameObject.SetActive(true);
+            portaInteract.gameObject.SetActive(false); // depende da l√≥gica
+            return;
+        }
+
+        // Primeira vez entrando na cena ‚Üí toca di√°logo inicial
+        GameStats.dialogoInicialTocado = true;
+
+        velhinha.mudarCenaAoTerminar = false;
         velhinha.onDialogoAcabar = AtivarRadio;
 
-        // Inicia di·logo da velhinha
         velhinha.IniciarDialogo();
     }
 
     void AtivarRadio()
     {
-        // Ativa o objeto do r·dio para que o jogador possa interagir
+        // Ativa o objeto do r√°dio para que o jogador possa interagir
         radioInteract.gameObject.SetActive(true);
 
-        // Passa referÍncia para que, ao terminar o r·dio, a porta seja ativada
-        radioInteract.onRadioAcabar = AtivarPorta;
+        // Quando usar o r√°dio pela primeira vez ‚Üí toca di√°logo inicial
+        radioInteract.dialogoInicial = radioIntroData;
+        radioInteract.dialogoSistema.onDialogoAcabar = AtivarPorta;
     }
 
     void AtivarPorta()
     {
-        // Ativa a porta apÛs o r·dio
+        // Ativa a porta ap√≥s o r√°dio
         portaInteract.gameObject.SetActive(true);
     }
 }

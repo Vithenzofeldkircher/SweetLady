@@ -20,8 +20,9 @@ public class DialogoSistema : MonoBehaviour
 
     private int currentLine = 0;
     private bool isTyping = false;
-    private bool dialogoAtivo = false;
+    public bool dialogoAtivo = false;
     private bool aguardandoTeclaTroca = false;
+
 
     void Update()
     {
@@ -141,7 +142,7 @@ public class DialogoSistema : MonoBehaviour
 
     internal void IniciarDialogo()
     {
-        throw new NotImplementedException();
+        IniciarDialogo(null);
     }
 
     public static class TextProcessor

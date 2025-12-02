@@ -9,17 +9,20 @@ EditorBuildSettings:
     path: Assets/Scenes/Start.unity
     guid: 813e36fbc6862a44fb01391fad68ad37
   - enabled: 1
-    path: Assets/Scenes/Creditos.unity
-    guid: b042686e3692a7445bbb98bff5b66e28
-  - enabled: 1
     path: Assets/Scenes/Victoria.unity
     guid: aafebd62cba28d042a4ba4de833e8cf9
   - enabled: 1
     path: Assets/Scenes/RoomScene.unity
     guid: 921b529de1229bf4a9a9fe039b28bca7
   - enabled: 1
-    path: Assets/Scenes/Game.unity
-    guid: d917b5c34a60a5a4a96e919e4b5317d3
+    path: Assets/Scenes/Creditos.unity
+    guid: b042686e3692a7445bbb98bff5b66e28
+  - enabled: 1
+    path: Assets/Scenes/derrota.unity
+    guid: 69c3f4c9d6a4f5f40ac615616ba5ff10
+  - enabled: 1
+    path: Assets/Scenes/vitoria.unity
+    guid: 20750d8e083c5f743aba4e9c83190e13
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
