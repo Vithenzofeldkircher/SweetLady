@@ -4,7 +4,7 @@ public class RadioInteracao : MonoBehaviour
 {
     public RadioNoite radioNoite;
     public DialogoSistema dialogManager; 
-    public GameDialogManager dialogoInicial;    
+    public DialogueData dialogoInicial;    
     public float distanciaInteracao = 2f;
 
     Transform player;
@@ -24,14 +24,20 @@ public class RadioInteracao : MonoBehaviour
 
         if (dist <= distanciaInteracao && Input.GetKeyDown(KeyCode.E))
         {
-            if (!GameStats.jaFaleiComNPC)
-            {
+            // Se um diálogo está rolando, não deixa iniciar outro
+            if (dialogManager.DialogoAtivo) return;
 
-                dialogManager.IniciarDialogo(dialogoInicial);
+            if (!GameStats.radioDialogoInicialTocado)
+            {
+                // Primeiro diálogo
+                dialogManager.dialogueData = dialogoInicial;
+                dialogManager.IniciarDialogo(null);
+
+                GameStats.radioDialogoInicialTocado = true;
             }
             else
             {
-
+                // Rádio Noite
                 radioNoite.gameObject.SetActive(true);
                 StartCoroutine(radioNoite.RadioFlow());
             }

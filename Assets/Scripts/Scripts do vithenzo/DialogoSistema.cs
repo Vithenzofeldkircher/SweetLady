@@ -23,6 +23,10 @@ public class DialogoSistema : MonoBehaviour
     public bool dialogoAtivo = false;
     private bool aguardandoTeclaTroca = false;
 
+    void Awake()
+    {
+        gameObject.SetActive(false);
+    }
 
     void Update()
     {
@@ -61,6 +65,8 @@ public class DialogoSistema : MonoBehaviour
     // Chamar este método para iniciar o diálogo
     public void IniciarDialogo(GameDialogManager dialogoInicial)
     {
+        IniciarDialogo(null);
+
         if (dialogueData == null || dialogueData.falas.Count == 0)
         {
             Debug.LogWarning("[DialogoSistema] DialogueData vazio.");

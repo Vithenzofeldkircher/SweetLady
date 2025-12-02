@@ -8,6 +8,7 @@ public class GameDialogManager : MonoBehaviour
     public DialogueData velhinhaDialogueData;
     public DialogueData radioIntroData;
 
+
     void Start()
     {
         // Começa SEM interação com rádio e porta
