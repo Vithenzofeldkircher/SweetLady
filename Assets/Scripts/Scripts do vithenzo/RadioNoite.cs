@@ -15,7 +15,7 @@ public class RadioNoite : MonoBehaviour
         nomeRadio.text = "Rádio da Base";
     }
 
-    public IEnumerator RadioFlow()  // <--- Tornou-se público
+    public IEnumerator RadioFlow()  
     {
         textoRadio.text = "";
 

@@ -2,9 +2,9 @@ using UnityEngine;
 using System;
 public class RadioInteract : MonoBehaviour
 {
-    public DialogoSistema dialogoSistema;  // componente para diálogos normais (DialogueData)
-    public DialogueData dialogoInicial;    // diálogo inicial do rádio
-    public RadioNoite radioNoite;           // componente para o relatório após decisão
+    public DialogoSistema dialogoSistema;  
+    public DialogueData dialogoInicial;   
+    public RadioNoite radioNoite;          
 
     private bool playerPerto = false;
 
@@ -16,16 +16,16 @@ public class RadioInteract : MonoBehaviour
         {
             if (!GameStats.radioDialogoInicialTocado)
             {
-                // Toca diálogo inicial
+
                 dialogoSistema.dialogueData = dialogoInicial;
                 dialogoSistema.IniciarDialogo();
                 GameStats.radioDialogoInicialTocado = true;
             }
             else if (GameStats.radioRelatorioAtivo)
             {
-                // Toca o relatório da noite
+
                 StartCoroutine(radioNoite.RadioFlow());
-                GameStats.radioRelatorioAtivo = false; // desativa pra não repetir
+                GameStats.radioRelatorioAtivo = false;
             }
             else
             {

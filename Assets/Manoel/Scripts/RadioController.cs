@@ -1,10 +1,14 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 using System.Collections;
 
 public class RadioController : MonoBehaviour
 {
+    public static Action OnRadioOn;
+    public static Action OnRadioOff;
+
     public AudioSource murmurSource;
     public string[] legendas;
     public TextMeshProUGUI subtitleText;
@@ -12,7 +16,8 @@ public class RadioController : MonoBehaviour
     public float delayEntreMensagens = 3f;
     public Button botaoRadio;
 
-    bool jaTocou = false;
+    bool jaTocou;
+    bool ativo;
 
     void Start()
     {
@@ -29,7 +34,12 @@ public class RadioController : MonoBehaviour
 
     void AcionarRadio()
     {
-        if (!jaTocou)
+        ativo = !ativo;
+
+        if (ativo) OnRadioOn?.Invoke();
+        else OnRadioOff?.Invoke();
+
+        if (!jaTocou && ativo)
         {
             jaTocou = true;
             StartCoroutine(MostrarMensagens());
@@ -44,7 +54,6 @@ public class RadioController : MonoBehaviour
                 murmurSource.volume = 0.25f;
 
             subtitleText.text = legendas[i];
-
             yield return new WaitForSeconds(tempoLegenda);
 
             subtitleText.text = "";
@@ -54,5 +63,8 @@ public class RadioController : MonoBehaviour
 
             yield return new WaitForSeconds(delayEntreMensagens);
         }
+
+        ativo = false;
+        OnRadioOff?.Invoke();
     }
 }

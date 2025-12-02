@@ -1,16 +1,15 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System;
 
 public class PortaInteracao : MonoBehaviour
 {
     public string cenaDestino = "RoomScene";
     public float distanciaInteracao = 2f;
-    private Transform player;
+
+    Transform player;
 
     void Start()
     {
-        // Acha o player automaticamente
         GameObject obj = GameObject.FindGameObjectWithTag("Player");
         if (obj != null)
             player = obj.transform;
@@ -20,12 +19,17 @@ public class PortaInteracao : MonoBehaviour
     {
         if (player == null) return;
 
-        // Checa a distância
         float distancia = Vector3.Distance(player.position, transform.position);
 
         if (distancia <= distanciaInteracao && Input.GetKeyDown(KeyCode.E))
         {
-            // Vai para a cena
+            VictorySceneAudio audio = Object.FindFirstObjectByType<VictorySceneAudio>();
+            if (audio != null)
+            {
+                audio.IrParaRoomScene();
+                return;
+            }
+
             SceneManager.LoadScene(cenaDestino);
         }
     }
