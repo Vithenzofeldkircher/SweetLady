@@ -25,13 +25,13 @@ public class RadioInteracao : MonoBehaviour
         if (dist <= distanciaInteracao && Input.GetKeyDown(KeyCode.E))
         {
             // Se um diálogo está rolando, não deixa iniciar outro
-            if (dialogManager.DialogoAtivo) return;
+            //if (dialogManager.DialogoAtivo) return;
 
             if (!GameStats.radioDialogoInicialTocado)
             {
                 // Primeiro diálogo
                 dialogManager.dialogueData = dialogoInicial;
-                dialogManager.IniciarDialogo(null);
+                dialogManager.IniciarDialogo();
 
                 GameStats.radioDialogoInicialTocado = true;
             }

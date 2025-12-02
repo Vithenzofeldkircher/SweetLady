@@ -63,10 +63,8 @@ public class DialogoSistema : MonoBehaviour
     }
 
     // Chamar este método para iniciar o diálogo
-    public void IniciarDialogo(GameDialogManager dialogoInicial)
+    public void IniciarDialogo()
     {
-        IniciarDialogo(null);
-
         if (dialogueData == null || dialogueData.falas.Count == 0)
         {
             Debug.LogWarning("[DialogoSistema] DialogueData vazio.");
@@ -80,6 +78,8 @@ public class DialogoSistema : MonoBehaviour
         gameObject.SetActive(true);
         MostrarFalaAtual();
     }
+
+
 
     private void MostrarFalaAtual()
     {
@@ -144,11 +144,6 @@ public class DialogoSistema : MonoBehaviour
         {
             Debug.LogWarning("[DialogoSistema] próximaCena não definida!");
         }
-    }
-
-    internal void IniciarDialogo()
-    {
-        IniciarDialogo(null);
     }
 
     public static class TextProcessor

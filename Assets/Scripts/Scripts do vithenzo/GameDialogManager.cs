@@ -40,7 +40,7 @@ public class GameDialogManager : MonoBehaviour
         radioInteract.gameObject.SetActive(true);
 
         // Quando usar o rádio pela primeira vez → toca diálogo inicial
-        radioInteract.dialogoInicial = radioIntroData;
+      //  radioInteract.dialogoInicial = radioIntroData;
         radioInteract.dialogoSistema.onDialogoAcabar = AtivarPorta;
     }
 
