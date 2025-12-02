@@ -5141,6 +5141,55 @@ PolygonCollider2D:
       - {x: 1.4375, y: -1.46875}
       - {x: 1.4375, y: 1.46875}
   m_UseDelaunayMesh: 0
+--- !u!1 &1187361545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1187361547}
+  - component: {fileID: 1187361546}
+  m_Layer: 0
+  m_Name: ScriptHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1187361546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187361545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15a96b333e360f348a21e2a9beb634fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VictorySceneAudio
+  musicasSuspense:
+  - {fileID: 8300000, guid: dfb1da8e64a124949ae0cb2364b61be4, type: 3}
+  - {fileID: 8300000, guid: b4272f35c8facf64788568616f71365c, type: 3}
+  estatica: {fileID: 8300000, guid: 629a961b17173d943b3a80034f147dab, type: 3}
+  batidas: {fileID: 8300000, guid: af07a5162bc2d3f45a691f48f150fcc1, type: 3}
+--- !u!4 &1187361547
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187361545}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.90199, y: -1.42388, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1197151701
 GameObject:
   m_ObjectHideFlags: 0
@@ -10323,3 +10372,4 @@ SceneRoots:
   - {fileID: 1547203996}
   - {fileID: 1140533970}
   - {fileID: 1089192664}
+  - {fileID: 1187361547}
