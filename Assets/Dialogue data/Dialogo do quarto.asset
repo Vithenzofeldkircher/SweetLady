@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   falas:
   - nomePersonagem: vo maria
-    texto: eu adoro pau
+    texto: 'aconteceu algo
+
+'
   - nomePersonagem: neto
     texto: eu tambem vovo

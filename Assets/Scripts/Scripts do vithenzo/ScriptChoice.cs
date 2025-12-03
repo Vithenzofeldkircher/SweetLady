@@ -182,10 +182,6 @@ public class ScriptChoice : MonoBehaviour
         }
     }
 
-    // -------------------------------
-    //        ESCOLHAS FINAIS
-    // -------------------------------
-
     public void EscolherEnvenenar()
     {
         PararDialogo();
@@ -205,7 +201,6 @@ public class ScriptChoice : MonoBehaviour
 
         GameStats.mostrarRadio = true;
 
-        // 🔊 CHAMAR RÁDIO ANTES DE MUDAR CENA
         TocarRadio();
 
         SceneManager.LoadScene("Victoria");
@@ -230,30 +225,38 @@ public class ScriptChoice : MonoBehaviour
 
         GameStats.mostrarRadio = true;
 
-        // 🔊 CHAMAR RÁDIO ANTES DE MUDAR CENA
         TocarRadio();
 
         SceneManager.LoadScene("Victoria");
         Time.timeScale = 1f;
     }
 
-    // -------------------------------
-    //          FUNÇÃO DO RÁDIO  
-    // -------------------------------
-
+    // -----------------------------------------------------
+    // *** CORREÇÃO APLICADA AQUI — OPÇÃO 1 ***
+    // -----------------------------------------------------
     void TocarRadio()
     {
-        // 🔔 Ajuste para o nome da **sua** classe de rádio
-        RadioNoite radio = FindObjectOfType<RadioNoite>();
+        // Encontra mesmo se estiver desativado
+        RadioNoite radio = Object.FindFirstObjectByType<RadioNoite>(FindObjectsInactive.Include);
 
         if (radio != null)
         {
             radio.gameObject.SetActive(true);
-            radio.StartCoroutine(radio.RadioFlow());  // reproduz a notícia
+
+            // Aguarda 1 frame ANTES de iniciar a coroutine
+            StartCoroutine(IniciarRadioDepois(radio));
         }
     }
 
-    // -------------------------------
+    // >>> O método está AQUI, dentro da mesma classe <<<
+    private IEnumerator IniciarRadioDepois(RadioNoite radio)
+    {
+        yield return null; // espera 1 frame
+
+        // Agora o GameObject já está ativo — podemos iniciar a coroutine com segurança
+        radio.StartCoroutine(radio.RadioFlow());
+    }
+    // -----------------------------------------------------
 
     private void VerificarFimDeJogo()
     {
