@@ -3,8 +3,8 @@ using UnityEngine;
 public class RadioInteracao : MonoBehaviour
 {
     public RadioNoite radioNoite;
-    public DialogoSistema dialogManager; 
-    public DialogueData dialogoInicial;    
+    public DialogoSistema dialogoSistema;
+    public DialogueData dialogoInicial;
     public float distanciaInteracao = 2f;
 
     Transform player;
@@ -24,20 +24,20 @@ public class RadioInteracao : MonoBehaviour
 
         if (dist <= distanciaInteracao && Input.GetKeyDown(KeyCode.E))
         {
-            // Se um diálogo está rolando, não deixa iniciar outro
-            //if (dialogManager.DialogoAtivo) return;
+            // Impede diálogo duplo
+            // if (dialogoSistema.DialogoAtivo) return;
 
             if (!GameStats.radioDialogoInicialTocado)
             {
-                // Primeiro diálogo
-                dialogManager.dialogueData = dialogoInicial;
-                dialogManager.IniciarDialogo();
+                // Primeiro diálogo do rádio
+                dialogoSistema.dialogueData = dialogoInicial;
+                dialogoSistema.IniciarDialogo();
 
                 GameStats.radioDialogoInicialTocado = true;
             }
             else
             {
-                // Rádio Noite
+                // Segunda interação ? fluxo do Rádio da Noite
                 radioNoite.gameObject.SetActive(true);
                 StartCoroutine(radioNoite.RadioFlow());
             }

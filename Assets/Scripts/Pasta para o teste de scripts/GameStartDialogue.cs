@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class GameStartDialogue : MonoBehaviour
 {
+    public static GameStartDialogue instance;
+
     public DialogoSistema dialogoSistema;
     public DialogueData dialogoInicial;
     public GameObject radioObj;

@@ -2028,57 +2028,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.625, y: 1.4375}
   m_EdgeRadius: 0
---- !u!1 &296083908
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 296083910}
-  - component: {fileID: 296083909}
-  m_Layer: 0
-  m_Name: dialoguemanager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &296083909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 296083908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d9f2da57aabe6c4ca9c4e117ea6eeb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameDialogManager
-  velhinha: {fileID: 1197151706}
-  dialogoSistema: {fileID: 1197151706}
-  radioInteract: {fileID: 0}
-  portaInteract: {fileID: 0}
-  velhinhaDialogueData: {fileID: 11400000, guid: da91bb1118da31e418ee4ae0e9a445bb, type: 2}
-  dialogoInicial: {fileID: 11400000, guid: d9939675317115142867c0e7d10a53f7, type: 2}
-  radioIntroData: {fileID: 11400000, guid: d9939675317115142867c0e7d10a53f7, type: 2}
---- !u!4 &296083910
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 296083908}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.43726, y: -0.34738, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &321397974
 GameObject:
   m_ObjectHideFlags: 0
@@ -2688,7 +2637,6 @@ GameObject:
   - component: {fileID: 462334672}
   - component: {fileID: 462334671}
   - component: {fileID: 462334670}
-  - component: {fileID: 462334674}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2745,7 +2693,7 @@ Canvas:
   m_GameObject: {fileID: 462334668}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 1805335189}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -2757,7 +2705,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 281
   m_TargetDisplay: 0
 --- !u!224 &462334673
 RectTransform:
@@ -2781,21 +2729,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &462334674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 462334668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74bc52fe2862baa4caa292ef204bc6f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameStartDialogue
-  dialogoSistema: {fileID: 1197151706}
-  dialogoInicial: {fileID: 11400000, guid: d9939675317115142867c0e7d10a53f7, type: 2}
-  radioObj: {fileID: 2030073105}
 --- !u!1 &479507042
 GameObject:
   m_ObjectHideFlags: 0
@@ -2975,7 +2908,7 @@ GameObject:
   - component: {fileID: 500804924}
   - component: {fileID: 500804923}
   - component: {fileID: 500804922}
-  - component: {fileID: 500804925}
+  - component: {fileID: 500804921}
   m_Layer: 0
   m_Name: Porta
   m_TagString: Untagged
@@ -2983,6 +2916,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &500804921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500804920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f47329e16afe6741967fa79bb8398f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PortaInteracao
+  cenaDestino: RoomScene
+  distanciaInteracao: 2
 --- !u!61 &500804922
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3102,20 +3049,72 @@ Transform:
   m_Children: []
   m_Father: {fileID: 714507124}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &500804925
+--- !u!1 &507214302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 507214305}
+  - component: {fileID: 507214304}
+  - component: {fileID: 507214303}
+  m_Layer: 0
+  m_Name: ColliderTrigger1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &507214303
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 500804920}
+  m_GameObject: {fileID: 507214302}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6700c1a8ac504404d8825a670a3c81e8, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a85cc9ca77e4514e95005d3659018db, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PortaInteract
-  distanciaInteracao: 2
-  player: {fileID: 631557479}
+  m_EditorClassIdentifier: Assembly-CSharp::DoorToRoomScene
+--- !u!65 &507214304
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507214302}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.016986, y: 3.3056068, z: 1}
+  m_Center: {x: -2.008493, y: -1.1528034, z: 0}
+--- !u!4 &507214305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507214302}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.0888, y: 0.11175, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &543247215
 GameObject:
   m_ObjectHideFlags: 0
@@ -3284,7 +3283,7 @@ Transform:
   m_GameObject: {fileID: 631557477}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.57, y: -0.27, z: 0}
+  m_LocalPosition: {x: 3.95, y: -0.15, z: 0}
   m_LocalScale: {x: 0.3422181, y: 0.34269747, z: 0.45729947}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5253,7 +5252,7 @@ GameObject:
   - component: {fileID: 1197151703}
   - component: {fileID: 1197151705}
   - component: {fileID: 1197151704}
-  - component: {fileID: 1197151706}
+  - component: {fileID: 1197151702}
   m_Layer: 5
   m_Name: Panel do dialogo
   m_TagString: Untagged
@@ -5261,6 +5260,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &1197151702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197151701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03070775f2d833d4d9ca52c979f6ff9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoSistema
+  dialogueData: {fileID: 11400000, guid: d9939675317115142867c0e7d10a53f7, type: 2}
+  dialogueText: {fileID: 2089345243}
+  nomeText: {fileID: 408611975}
+  typingSpeed: 0.03
+  mudarCenaAoTerminar: 0
+  proximaCena: 
+  dialogoAtivo: 0
 --- !u!224 &1197151703
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5320,25 +5338,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1197151701}
   m_CullTransparentMesh: 1
---- !u!114 &1197151706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1197151701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03070775f2d833d4d9ca52c979f6ff9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DialogoSistema
-  dialogueData: {fileID: 11400000, guid: d9939675317115142867c0e7d10a53f7, type: 2}
-  dialogueText: {fileID: 2089345243}
-  nomeText: {fileID: 408611975}
-  typingSpeed: 0.03
-  mudarCenaAoTerminar: 0
-  proximaCena: 
-  dialogoAtivo: 1
 --- !u!1 &1241226679
 GameObject:
   m_ObjectHideFlags: 0
@@ -8695,6 +8694,7 @@ GameObject:
   - component: {fileID: 1986846800}
   - component: {fileID: 1986846802}
   - component: {fileID: 1986846801}
+  - component: {fileID: 1986846799}
   - component: {fileID: 1986846803}
   m_Layer: 5
   m_Name: Panel do radio
@@ -8703,6 +8703,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &1986846799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986846797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49ef6e1d0aa6d1a40b21d1aa6ccedc1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RadioNoite
+  textoRadio: {fileID: 1551692449}
+  nomeRadio: {fileID: 251484525}
+  delayEntreLetras: 0.03
+  manager: {fileID: 2027374778}
 --- !u!224 &1986846800
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8771,13 +8787,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1986846797}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49ef6e1d0aa6d1a40b21d1aa6ccedc1f, type: 3}
+  m_Script: {fileID: 11500000, guid: 03070775f2d833d4d9ca52c979f6ff9b, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RadioNoite
-  textoRadio: {fileID: 251484525}
-  nomeRadio: {fileID: 1551692449}
-  delayEntreLetras: 0.03
-  manager: {fileID: 296083909}
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoSistema
+  dialogueData: {fileID: 11400000, guid: b85014a22908af845a233b7dd1a3b790, type: 2}
+  dialogueText: {fileID: 1551692449}
+  nomeText: {fileID: 251484525}
+  typingSpeed: 0.03
+  mudarCenaAoTerminar: 0
+  proximaCena: 
+  dialogoAtivo: 0
 --- !u!1 &1989032290
 GameObject:
   m_ObjectHideFlags: 0
@@ -8985,6 +9004,57 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 7.2278094, y: 0.5071813}
   m_EdgeRadius: 0
+--- !u!1 &2027374777
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2027374779}
+  - component: {fileID: 2027374778}
+  m_Layer: 0
+  m_Name: DialogueManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2027374778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027374777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d9f2da57aabe6c4ca9c4e117ea6eeb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameDialogManager
+  velhinha: {fileID: 1197151702}
+  dialogoSistema: {fileID: 0}
+  radioInteract: {fileID: 0}
+  portaInteract: {fileID: 500804921}
+  velhinhaDialogueData: {fileID: 11400000, guid: 66dd6937fe2e02b4d8851c9f904ea1d0, type: 2}
+  dialogoInicial: {fileID: 0}
+  radioIntroData: {fileID: 11400000, guid: da91bb1118da31e418ee4ae0e9a445bb, type: 2}
+--- !u!4 &2027374779
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027374777}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.0888, y: 0.11175, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2030073105
 GameObject:
   m_ObjectHideFlags: 0
@@ -9141,14 +9211,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2030073105}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2c39e1f5f8115b4ebe53e316b598b79, type: 3}
+  m_Script: {fileID: 11500000, guid: 5db9742a2a8b65d48955e6fa4140199f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RadioInteract
+  m_EditorClassIdentifier: Assembly-CSharp::RadioInteracao
+  radioNoite: {fileID: 1986846799}
+  dialogoSistema: {fileID: 0}
+  dialogoInicial: {fileID: 0}
   distanciaInteracao: 2
-  player: {fileID: 631557479}
-  dialogoSistema: {fileID: 1197151706}
-  dialogoInicialRadio: {fileID: 11400000, guid: d9939675317115142867c0e7d10a53f7, type: 2}
-  radioNoite: {fileID: 1986846803}
 --- !u!1 &2037938472
 GameObject:
   m_ObjectHideFlags: 0
@@ -10391,4 +10460,5 @@ SceneRoots:
   - {fileID: 1140533970}
   - {fileID: 1089192664}
   - {fileID: 1187361547}
-  - {fileID: 296083910}
+  - {fileID: 2027374779}
+  - {fileID: 507214305}

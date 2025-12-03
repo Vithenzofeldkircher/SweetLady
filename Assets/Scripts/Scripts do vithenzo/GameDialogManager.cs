@@ -3,53 +3,50 @@
 public class GameDialogManager : MonoBehaviour
 {
     public DialogoSistema velhinha;
-    public RadioInteract radioInteract;  // Script para interação com radio (E)
-    public PortaInteracao portaInteract;  // Script para interação com porta (E)
-    public DialogueData velhinhaDialogueData;
-    public DialogueData radioIntroData;
+    public DialogoSistema dialogoSistema; // Gerencia o diálogo inicial global
 
+    public RadioInteracao radioInteract;
+    public PortaInteracao portaInteract;
+
+    public DialogueData velhinhaDialogueData;
+    public DialogueData dialogoInicial;
+    public DialogueData radioIntroData;
 
     void Start()
     {
-        // Começa SEM interação com rádio e porta
-        //radioInteract.gameObject.SetActive(false);
-        //portaInteract.gameObject.SetActive(false);
 
-        // Configura diálogo da velhinha
-        // Se já tocou o diálogo inicial antes, NÃO executar de novo
+        // Diálogo inicial só toca 1 vez no jogo inteiro
         if (!GameStats.dialogoInicialTocado)
         {
             GameStats.dialogoInicialTocado = true;
 
-            dialogoSistema.onDialogoAcabar = AtivarRadio;
             dialogoSistema.dialogueData = dialogoInicial;
-
-            // Use a Coroutine para iniciar com delay
-            StartCoroutine(IniciarDialogoComAtraso());
+            dialogoSistema.onDialogoAcabar = AtivarRadio;
+            dialogoSistema.IniciarDialogo();
         }
-
-        // Primeira vez entrando na cena → toca diálogo inicial
-        GameStats.dialogoInicialTocado = true;
-
-        velhinha.mudarCenaAoTerminar = false;
-        velhinha.onDialogoAcabar = AtivarRadio;
-
-        velhinha.IniciarDialogo();
+        else
+        {
+            // Se já tocou antes, inicia direto a velhinha
+            velhinha.dialogueData = velhinhaDialogueData;
+            velhinha.onDialogoAcabar = AtivarRadio;
+            velhinha.IniciarDialogo();
+        }
     }
 
     void AtivarRadio()
     {
-        // Ativa o objeto do rádio para que o jogador possa interagir
         radioInteract.gameObject.SetActive(true);
 
-        // Quando usar o rádio pela primeira vez → toca diálogo inicial
-      //  radioInteract.dialogoInicial = radioIntroData;
-        radioInteract.dialogoSistema.onDialogoAcabar = AtivarPorta;
+        // Define o diálogo inicial do rádio
+        radioInteract.dialogoInicial = radioIntroData;
+
+        // Após o diálogo do rádio → libera a porta
+        if (radioInteract.dialogoSistema != null)
+            radioInteract.dialogoSistema.onDialogoAcabar = AtivarPorta;
     }
 
     void AtivarPorta()
     {
-        // Ativa a porta após o rádio
         portaInteract.gameObject.SetActive(true);
     }
 }
